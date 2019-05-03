@@ -1,0 +1,48 @@
+
+
+<!--fin Menu-->
+
+
+ <!--formulario y mapa-->
+<section id="contacto" style="  background: url(./assets/image/inicio/politicas/bannercontacto.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+max-width: 100%;
+padding: 169px 0px 10px;">
+    <div class="container-fluid" >
+            <div class="row">
+                    <div class="col-md-1"></div>
+                       <div class="col-md-5 wow animated fadeIn form-group" data-wow-duration = "2s" data-wow-delay = "1s">
+                        <form action="correo/enviar.php" method="POST" onSubmit="return validar();">
+                          <b class="titulo-contacto wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Contacto</b><br>
+                          <label class="textos-contacto" style="padding: 10px">Los campos con * son Obligatorios</label>
+                           <input id="nombre" class="con form-control" style="margin-bottom: 10px;" id="pnombre" type="text" name="Nombre" placeholder="* Nombre">
+                           <span class="help-block" style="color:red"></span>
+                           <input id="correo" class="con" style="margin-bottom: 10px;"  type="email" name="Correo" placeholder="* Correo" >
+                           <span class="help-block" style="color:red"></span>
+                           <input id="telefono" class="con" style="margin-bottom: 10px;"  type="name" name="Telefono" placeholder="* Teléfono"> <br><br>
+
+                           <textarea id="mensaje" class="con" name="mensaje" placeholder="* Escriba aquí su mensaje"></textarea>
+
+                           <label class="textos-contacto">Fecha de preferencia de cita</label>
+                           <input id="cita" class="con" type="date" name="cita" step="1" min="2018-10-16" max="2019-12-31">
+
+                           <label class="textos-contacto">Horario de preferencia de cita</label>
+                           <input id="hora" class="con" type="time" name="hora" value="09:00:00" max="19:00:00" min="09:00:00" step="1">
+                           <!--<div class="g-recaptcha" data-sitekey="6Lf00osUAAAAAOAKRFeuhlv2YUMNwnypE_EXcFjJ"></div>-->
+                           <input  class="con" type="submit" onclick="pregunta()"  value="Enviar" id="btn">
+                        </form>
+                    </div>
+                     <div class="col-md-5 wow animated fadeIn" data-wow-duration = "2s" data-wow-delay = "1s">
+                        <div id="mapa"></div><br>
+                        <h5 class="contenidos-contacto-titulo">CSC WELLNESS CENTER</h5><br>
+                        <p id="color-contacto" class="contenidos-contacto">Georgia #145, Col. Nápoles, CDMX, C.P 03810<p>
+                        <p id="color-contacto" class="contenidos-contacto"> Teléfonos: 5543-1607 / 5543-1385</p>
+                        <p id="color-contacto" class="contenidos-contacto">Whatsapp: 55-7754-9320</p>
+                        <p id="color-contacto" class="contenidos-contacto">Correo: <a href="mailto:informescsc@cscwellnesscenter.com.mx">informescsc@cscwellnesscenter.com.mx</a></p>
+                    </div>
+               </div>
+    </div>
+</section>
+<!--fin formulario y mapa-->

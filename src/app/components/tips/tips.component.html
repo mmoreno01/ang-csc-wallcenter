@@ -1,0 +1,38 @@
+
+<section  id="section-tips"  class="content-section">
+    <div class="container">
+        <h2 class="title title-sblog wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">Tips</h2>
+        <hr class="linea-blog wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
+        <p class="subtitle-blog wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">En CSC Wellness Center te ayudamos a lucir y sentirte bien, <br>con nuestros prácticos consejos lograrás un equilibrio entre mente y cuerpo.</p>
+        <div class="row">
+          <div class="col-12">
+              <owl-carousel-o [options]="customOptions" >
+                  <ng-container  *ngFor='let post of posts'>
+                      <ng-template  carouselSlide [id]="post.id" >
+                        <div class="img-tip">
+                            <img src="{{post._embedded['wp:featuredmedia'][0].source_url}}">
+                        </div>
+                        <div class="content-info">
+                              <h5>
+                                <a href="{{post.link}}"><p class="titutlo-noticia">{{ post.title.rendered }}</p></a>
+                              </h5>
+                              <p>{{ post.excerpt.rendered | truncate: 100 }}</p>
+                              <p>
+                                <a href="{{post.link}}" target="_blank"><label>Ver más</label></a>
+                              </p>
+                              <div class="tips-star">
+                                  <span><i class="fas fa-star" ></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                              </div>
+                        </div>
+
+                      </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+          </div>
+        </div>
+    </div>
+</section>

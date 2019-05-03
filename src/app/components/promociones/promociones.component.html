@@ -1,0 +1,44 @@
+
+<section  id="blog-spas" >
+    <div class="container">
+        <h2 class="title title-sblog wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">Promociones</h2>
+        <hr class="linea-blog wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
+        <p class="subtitle-promo wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">En CSC Wellness Center queremos que siempre luzcas espectacular. <br>
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12">
+              <owl-carousel-o [options]="customOptions" >
+                  <ng-container *ngFor='let post of posts'>
+                      <ng-template carouselSlide [id]="post.id" >
+                          <img src="{{post._embedded['wp:featuredmedia'][0].source_url}}">
+                      </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+          </div>
+          <div class="col-lg-4 col-md-12 wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
+              <img src="./assets/image/inicio/SPAWEB.gif" alt="" class="im-blog">
+          </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- parallax two -->
+<section id="parallax" style="background-image: url(./assets/image/parallax/cscwellnesscenter2.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+width: 100%;
+height: 300px;
+position: relative;">
+    <div class="overlay-int"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <p  class="wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">Sentirte bien, es verte bien</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- parallax two -->

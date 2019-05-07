@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { BellezaComponent } from './components/belleza/belleza.component';
 import { SpaComponent } from './components/spa/spa.component';
 import { BienestarComponent } from './components/bienestar/bienestar.component'
 import {HomeComponent }from './components/home/home.component';
+
 
 //Rutas
 import {APP_ROUTING} from './app.routes';
@@ -56,7 +58,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
       HttpClientModule,
       BrowserAnimationsModule,
       CarouselModule,
-      APP_ROUTING
+      APP_ROUTING,
+      NgxPaginationModule
   ],
   providers: [
     ServiciosService

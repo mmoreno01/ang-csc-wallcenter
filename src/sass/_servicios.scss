@@ -1,0 +1,30 @@
+@import "variables";
+@import"animate";
+
+#servicios{
+  padding: 200px 0px;
+
+.card{
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  .card-body{
+    h5{
+      text-align: center;
+    }
+    p{
+      text-align: justify;
+    }
+    a{
+      background-color: $textos-contacto;
+      border-color: $textos-contacto;
+      display:block;
+      transition: all ease-in .3s;
+    }
+    a:hover{
+      background-color: $texto-preguntas;
+      transition: ease-in-out .2s;
+    }
+  }
+}
+}

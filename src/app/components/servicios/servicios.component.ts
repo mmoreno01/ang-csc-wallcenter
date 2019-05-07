@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { ActivateRoute } from '@angular router';
 import { ServiciosService } from '../../services/servicios.service';
-// import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-servicios',
@@ -8,12 +8,13 @@ import { ServiciosService } from '../../services/servicios.service';
   styles: []
 })
 export class ServiciosComponent implements OnInit {
-  ngOnInit(): void {
-  }
 
-
+ 
+  p: number= 1;
   listadoProducto:any;
-  productos:any;
+  productos:any =  [] ;
+
+  allimages:any[] = [];
 
   constructor(private _serviciosService:ServiciosService)
   {
@@ -24,7 +25,7 @@ export class ServiciosComponent implements OnInit {
     .then(data=>{
       this.listadoProducto = data;
       console.log(data);
-      // this.cargarProductos();
+      this.cargarProductos();
     })
     .catch(err=>{
       console.log(err);
@@ -33,20 +34,23 @@ export class ServiciosComponent implements OnInit {
 
   };
 
+  ngOnInit(): void {
+  }
+
 //Preparamos la funcion para obtener el listado de los productos
-  // cargarProductos()
-  // {
-  //   this.productos = this.listadoProductos;
-  //   //Evaluamos si el listado obtenido cuenta con registros, con la finalidad de hacerle saber al usuario que no cuenta con registros.
-  //   if (this.categorias.length > 0)
-  //   {
-  //     this.mensajeSinProductos = false;
-  //   }
-  //   else
-  //   {
-  //     this.mensajeSinProductos = true;
-  //   }
-  // };
+  cargarProductos()
+  {
+    this.productos = this.listadoProducto;
+    //Evaluamos si el listado obtenido cuenta con registros, con la finalidad de hacerle saber al usuario que no cuenta con registros.
+    // if (this.categorias.length > 0)
+    // {
+    //   this.mensajeSinProductos = false;
+    // }
+    // else
+    // {
+    //   this.mensajeSinProductos = true;
+    // }
+  };
 
 }
 

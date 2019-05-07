@@ -1,0 +1,50 @@
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+#servicios {
+  padding: 200px 0px; }
+  #servicios .card {
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+    #servicios .card .card-body h5 {
+      text-align: center; }
+    #servicios .card .card-body p {
+      text-align: justify; }
+    #servicios .card .card-body a {
+      background-color: #b1875a;
+      border-color: #b1875a;
+      display: block;
+      -webkit-transition: all ease-in .3s;
+      -o-transition: all ease-in .3s;
+      transition: all ease-in .3s; }
+    #servicios .card .card-body a:hover {
+      background-color: #d1ae85;
+      -webkit-transition: ease-in-out .2s;
+      -o-transition: ease-in-out .2s;
+      transition: ease-in-out .2s; }

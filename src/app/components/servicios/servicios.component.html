@@ -1,9 +1,23 @@
-<p>
-  servicios works!
-</p>
-<!-- <div *ngFor="let servicio of servicios">
-  <p>{{ post.title.rendered }}</p>
-   <td>{{servicios.precio}}</td>
-  <td><button (click)="baja(servicios.codigo)">Borrar?</button></td>
-  <td><button (click)="seleccionar(servicios.codigo)">Seleccionar</button></td>
-</div> -->
+
+<section id="servicios" class="animated fadeIn">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4 col-sm-6" *ngFor="let producto of productos  | paginate: { itemsPerPage: 6, currentPage: p }">
+            <div class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">{{producto.title}}</h5>
+                  <p class="card-text">{{ producto.info | truncate: 100 }}</p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <pagination-controls (pageChange)="p = $event"  previousLabel="Previous" nextLabel="Next"></pagination-controls>
+    </div>
+</section>
+
+
+
+
+

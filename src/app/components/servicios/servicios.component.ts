@@ -9,33 +9,39 @@ import { ServiciosService } from '../../services/servicios.service';
 })
 export class ServiciosComponent implements OnInit {
 
- 
+  heroes:any[] = [];
+
   p: number= 1;
   listadoProducto:any;
   productos:any =  [] ;
 
-  allimages:any[] = [];
 
+//recibimos los datos en un arreglo basio
   constructor(private _serviciosService:ServiciosService)
   {
-
-
     //Recuperar los datos del servicio para obtener los productos.
     _serviciosService.obtenerProductos()
     .then(data=>{
       this.listadoProducto = data;
       console.log(data);
       this.cargarProductos();
+
     })
     .catch(err=>{
       console.log(err);
     });
 
 
-  };
-
-  ngOnInit(): void {
   }
+
+
+//obtiene las imagenes del servicio
+  ngOnInit() {
+    this.heroes = this._serviciosService.getHeroes;
+        // console.log(this.heroes);
+
+  }
+
 
 //Preparamos la funcion para obtener el listado de los productos
   cargarProductos()
@@ -53,7 +59,5 @@ export class ServiciosComponent implements OnInit {
   };
 
 }
-
-
 
 

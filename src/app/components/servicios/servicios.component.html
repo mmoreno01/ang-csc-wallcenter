@@ -1,23 +1,23 @@
 
+
+
+
+
 <section id="servicios" class="animated fadeIn">
-    <div class="container">
-      <div class="row">
-        <div class=" col-md-4 col-sm-6" *ngFor="let producto of productos  | paginate: { itemsPerPage: 6, currentPage: p }">
-            <div class="card">
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                <div class="card-body">
+  <div class="container">
+      <div class="card-columns">
+          <div class="card" *ngFor="let producto of productos | paginate: { itemsPerPage: 6, currentPage: p }">
+                     <img src="{{ producto.img }}" class="card-img-top" alt="...">
+                <div class="card-body" >
                   <h5 class="card-title">{{producto.title}}</h5>
                   <p class="card-text">{{ producto.info | truncate: 100 }}</p>
                   <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
             </div>
-          </div>
-        </div>
-        <pagination-controls (pageChange)="p = $event"  previousLabel="Previous" nextLabel="Next"></pagination-controls>
-    </div>
+      </div>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
 </section>
-
-
 
 
 

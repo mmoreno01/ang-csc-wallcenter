@@ -19,6 +19,8 @@ import { BellezaComponent } from './components/belleza/belleza.component';
 import { SpaComponent } from './components/spa/spa.component';
 import { BienestarComponent } from './components/bienestar/bienestar.component'
 import {HomeComponent }from './components/home/home.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+
 
 
 //Rutas
@@ -30,7 +32,6 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 
 //services
 import { ServiciosService } from './services/servicios.service';
-import { ServiciosComponent } from './components/servicios/servicios.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
       NgxPaginationModule
   ],
   providers: [
-    ServiciosService
+    ServiciosService,
+    
   ],
   bootstrap: [AppComponent]
 

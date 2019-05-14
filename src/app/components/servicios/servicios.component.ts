@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { ActivateRoute } from '@angular router';
 import { ServiciosService } from '../../services/servicios.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-servicios',
@@ -9,7 +10,7 @@ import { ServiciosService } from '../../services/servicios.service';
 })
 export class ServiciosComponent implements OnInit {
 
-  heroes:any[] = [];
+  // heroes:any[] = [];
 
   p: number= 1;
   listadoProducto:any;
@@ -17,13 +18,14 @@ export class ServiciosComponent implements OnInit {
 
 
 //recibimos los datos en un arreglo basio
-  constructor(private _serviciosService:ServiciosService)
+  constructor(private _serviciosService:ServiciosService,
+              private router:Router)
   {
     //Recuperar los datos del servicio para obtener los productos.
     _serviciosService.obtenerProductos()
     .then(data=>{
       this.listadoProducto = data;
-      console.log(data);
+      // console.log(data);
       this.cargarProductos();
 
     })
@@ -31,15 +33,13 @@ export class ServiciosComponent implements OnInit {
       console.log(err);
     });
 
-
   }
 
 
 //obtiene las imagenes del servicio
   ngOnInit() {
-    this.heroes = this._serviciosService.getHeroes;
-        // console.log(this.heroes);
-
+    // this.heroes = this._serviciosService.getHeroes;
+    // console.log(this.heroes);
   }
 
 
@@ -47,16 +47,15 @@ export class ServiciosComponent implements OnInit {
   cargarProductos()
   {
     this.productos = this.listadoProducto;
-    //Evaluamos si el listado obtenido cuenta con registros, con la finalidad de hacerle saber al usuario que no cuenta con registros.
-    // if (this.categorias.length > 0)
-    // {
-    //   this.mensajeSinProductos = false;
-    // }
-    // else
-    // {
-    //   this.mensajeSinProductos = true;
-    // }
+    // console.log(this.listadoProducto);
+
   };
+
+//muestra el servicios por medio del index
+  verProducto(idx:number){
+    this.router.navigate(['/servicio',idx]);
+  }
+
 
 }
 

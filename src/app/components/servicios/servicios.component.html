@@ -5,19 +5,57 @@
 
 <section id="servicios" class="animated fadeIn">
   <div class="container">
+      <div class="text-center content-services">
+          <ul class="portfolio-filter">
+              <li class="active">
+                <a href="#" >Todos</a>
+              </li>
+              <li class="">
+                <a [routerLink]="['/servicio,i']" routerLinkActive="router-link-active">Masajes</a>
+              </li>
+              <li class="">
+                <a href="#">Faciales</a>
+              </li>
+              <li class="">
+                <a href="#">Rituales Especiales</a>
+              </li>
+              <li class="">
+                <a href="#">Servicios Plus</a>
+              </li>
+              <li class="">
+                <a href="#">Aparatologia de Vanguardia</a>
+              </li>
+              <li class="">
+                <a href="#">Tratamientos corporales</a>
+              </li>
+              <li class="">
+                <a href="#">Medicina Estética</a>
+              </li>
+              <li class="">
+                <a href="#">Servicios Quirofísica</a>
+              </li>
+          </ul>
+          <!-- <button (click)="verProducto(i)">Click me!</button> -->
+        </div>
       <div class="card-columns">
-          <div class="card" *ngFor="let producto of productos | paginate: { itemsPerPage: 6, currentPage: p }">
-                     <img src="{{ producto.img }}" class="card-img-top" alt="...">
-                <div class="card-body" >
-                  <h5 class="card-title">{{producto.title}}</h5>
-                  <p class="card-text">{{ producto.info | truncate: 100 }}</p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
+            <div class="portfolio-item cat1 cat3" *ngFor="let producto of productos; let i = index">
+              <div class="thumb card animated fadeIn fast">
+                  <img [src]="producto.img" class="card-img-top" [alt]="producto.title">
+                  <div class="portfolio-hover">
+                      <div class="action-btn">
+                          <a [routerLink]="['/servicio',i]" class="popup-link" title="lightbox view"> <i class="fas fa-plus"></i>
+                          </a>
+                      </div>
+                      <div class="portfolio-description">
+                          <h4><a [routerLink]="['/servicio',i]" class="popup-link" title="lightbox view">{{producto.title}}</a></h4>
+                          <p><a href="#">{{producto.category_id}}</a></p>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <pagination-controls (pageChange)="p = $event"></pagination-controls>
   </div>
+  <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
 </section>
-
-
 

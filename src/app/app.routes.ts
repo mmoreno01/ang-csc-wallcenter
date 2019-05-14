@@ -7,7 +7,7 @@ import { BienestarComponent } from './components/bienestar/bienestar.component';
 import { EliteHealthComponent } from './components/elite-health/elite-health.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
-
+import {ServicioComponent } from './components/servicio/servicio.component';
 
 
 const APP_ROUTES: Routes = [
@@ -19,6 +19,8 @@ const APP_ROUTES: Routes = [
   { path: 'elite-health', component: EliteHealthComponent},
   { path: 'contacto', component: ContactoComponent},
   { path: 'servicios', component: ServiciosComponent},
+  { path: 'servicio/:id', component: ServicioComponent},
+
 
 
   { path: '**', pathMatch: 'full', redirectTo: 'home' }

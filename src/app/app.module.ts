@@ -20,6 +20,7 @@ import { SpaComponent } from './components/spa/spa.component';
 import { BienestarComponent } from './components/bienestar/bienestar.component'
 import {HomeComponent }from './components/home/home.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
+import { ServicioComponent } from './components/servicio/servicio.component';
 
 
 
@@ -52,7 +53,8 @@ import { ServiciosService } from './services/servicios.service';
     SliderComponent,
     EliteHealthComponent,
     ContactoComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    ServicioComponent
   ],
   imports: [
       BrowserModule,
@@ -64,7 +66,7 @@ import { ServiciosService } from './services/servicios.service';
   ],
   providers: [
     ServiciosService,
-    
+
   ],
   bootstrap: [AppComponent]
 

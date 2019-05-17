@@ -136,7 +136,7 @@
     font-size: 35px; }
   #servicios .portfolio-description,
   #servicios .portfolio-description h4 a,
-  #servicios .portfolio-hover .action-btn a {
+  #servicios .portfolio-hover .action-btn span {
     text-align: center;
     color: #222; }
   #servicios .portfolio-description h4 {
@@ -183,6 +183,9 @@
   #servicios .portfolio-filter li a:hover,
   #servicios .portfolio-filter li.active a {
     color: #222; }
+
+.puntero {
+  cursor: pointer; }
 
 .body-content {
   position: relative;

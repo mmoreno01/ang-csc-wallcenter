@@ -11,7 +11,7 @@
                 <a href="#" >Todos</a>
               </li>
               <li class="">
-                <a [routerLink]="['/servicio,i']" routerLinkActive="router-link-active">Masajes</a>
+                 <!-- <a [routerLink]="['/servicio,i']" routerLinkActive="router-link-active">Masajes</a> -->
               </li>
               <li class="">
                 <a href="#">Faciales</a>
@@ -35,20 +35,19 @@
                 <a href="#">Servicios Quirofísica</a>
               </li>
           </ul>
-          <!-- <button (click)="verProducto(i)">Click me!</button> -->
         </div>
       <div class="card-columns">
-            <div class="portfolio-item cat1 cat3" *ngFor="let producto of productos; let i = index">
-              <div class="thumb card animated fadeIn fast">
-                  <img [src]="producto.img" class="card-img-top" [alt]="producto.title">
+            <div (click)="verServicio(servicio)" class="portfolio-item cat1 cat3" *ngFor="let servicio of servicios; let i = index">
+              <div class="thumb card animated fadeIn fast puntero">
+                  <img [src]="servicio.img" class="card-img-top" [alt]="servicio.title">
                   <div class="portfolio-hover">
                       <div class="action-btn">
-                          <a [routerLink]="['/servicio',i]" class="popup-link" title="lightbox view"> <i class="fas fa-plus"></i>
-                          </a>
+                          <span class="popup-link" title="lightbox view"> <i class="fas fa-plus"></i></span>
                       </div>
                       <div class="portfolio-description">
-                          <h4><a [routerLink]="['/servicio',i]" class="popup-link" title="lightbox view">{{producto.title}}</a></h4>
-                          <p><a href="#">{{producto.category_id}}</a></p>
+                          <!-- <h4><a [routerLink]="['/servicio',i]" class="popup-link" title="lightbox view">{{servicio.title}}</a></h4> -->
+                          <h4 class="popup-link">{{servicio.title}}</h4>
+                          <p><a href="#">{{servicio.category_id}}</a></p>
 
                       </div>
                   </div>
@@ -56,6 +55,5 @@
           </div>
       </div>
   </div>
-  <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+ <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
 </section>
-

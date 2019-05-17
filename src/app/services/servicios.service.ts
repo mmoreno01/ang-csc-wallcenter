@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators'
 // import { resolve } from 'path';
 
 @Injectable({
@@ -7,34 +8,26 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ServiciosService {
 
+  servcio:any []=[];
 
 
-  constructor(private http: HttpClient) { }
+  constructor( private http: HttpClient) { }
 
-    //Declaramos la funcion para recuperar los datos procesados por el constructor de la clase
-    public obtenerProductos()
-    {
-      return new Promise(
-        resolve=>{
-          this.http.get('http://www.cscwellnesscenter.com.mx/angular/recuperartodos.php')
-          .subscribe(
-          data => resolve(data)
-          )
-
-        }
-
-      )
-    };
-
-
-
-//meotdo para obtener imagnes fuera del servicio
- getServicios(){
-  return this.obtenerProductos;
+//obtiene la informacion de la base de datos por el metodo get
+  getServices(){
+   return this.http.get('http://www.cscwellnesscenter.com.mx/angular/recuperartodos.php')
+          .pipe( map( data =>{
+              return data;
+          }))
+  }
+//obtiene los datos por id 
+getServicio( id: string){
+  return this.http.get('http://www.cscwellnesscenter.com.mx/angular/recuperartodos.php')
+  .pipe(map( data => {
+      return data[id];
+  }))
 }
 
-getServicio(idx: string){
-  return this.obtenerProductos[idx];
-}
+
 
 }

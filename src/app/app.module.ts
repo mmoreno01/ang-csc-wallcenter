@@ -33,6 +33,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 
 //services
 import { ServiciosService } from './services/servicios.service';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { ServiciosService } from './services/servicios.service';
     EliteHealthComponent,
     ContactoComponent,
     ServiciosComponent,
-    ServicioComponent
+    ServicioComponent,
+    SearchComponent
   ],
   imports: [
       BrowserModule,

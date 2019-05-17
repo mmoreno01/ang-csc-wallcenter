@@ -131,7 +131,7 @@ background-color: red;
 
 .portfolio-description,
 .portfolio-description h4 a,
-.portfolio-hover .action-btn a {
+.portfolio-hover .action-btn span {
   text-align: center;
   color: #222;
 }
@@ -216,7 +216,9 @@ background-color: red;
 }
 
 
-
+.puntero{
+  cursor: pointer;
+}
 .body-content{
     position: relative;
     overflow: hidden;

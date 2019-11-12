@@ -46,7 +46,7 @@ video {
 #conocenos {
   padding: 100px 0px 50px;
   position: relative; }
-  #conocenos .texto-conocenos h1 {
+  #conocenos h1 {
     color: #c68659;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -55,10 +55,11 @@ video {
     text-transform: uppercase;
     letter-spacing: 10px;
     padding-bottom: 20px; }
-  #conocenos .texto-conocenos p {
+  #conocenos p {
     font-family: 'Poppins', sans-serif;
     text-align: justify;
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 0px 30px; }
   #conocenos .contenedor-imagenes {
     padding: 100px 0px 0px; }
     #conocenos .contenedor-imagenes .img1 {
@@ -76,6 +77,29 @@ video {
       margin-top: -40px;
       margin-left: 100px;
       margin-bottom: 50px; }
+  #conocenos .img-csc {
+    margin-top: 30px; }
+    #conocenos .img-csc ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-padding-start: 0px;
+      padding-inline-start: 0px; }
+      #conocenos .img-csc ul li {
+        display: inline-block;
+        margin-left: 20px; }
+        #conocenos .img-csc ul li img {
+          border-radius: 50%;
+          border: 5px solid rgba(252, 186, 248, 0.5); }
+        #conocenos .img-csc ul li .title-csc {
+          color: #c68659;
+          font-size: 15px;
+          padding: 0;
+          text-align: center;
+          padding-top: 10px; }
 
 #carrusel-principal {
   position: relative;
@@ -211,112 +235,6 @@ video {
   position: relative;
   color: white;
   margin: 0 auto; }
-
-#im-redondas {
-  position: relative; }
-  #im-redondas h2 {
-    color: #c68659;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-top: 0px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    padding-bottom: 20px; }
-  #im-redondas .linea-blog {
-    background-color: #664936;
-    bottom: 0;
-    width: 40px;
-    left: 0px;
-    height: 1px;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-bottom: 20px; }
-  #im-redondas .subtitle-promo {
-    text-align: center;
-    font-family: 'Poppins', sans-serif; }
-  #im-redondas p {
-    text-align: center; }
-  #im-redondas ul {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center; }
-  #im-redondas li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    margin-left: 30px;
-    cursor: pointer; }
-    #im-redondas li .view img {
-      display: block;
-      position: relative;
-      width: 100%;
-      border-radius: 50%; }
-    #im-redondas li .img-redo::before {
-      content: " ";
-      position: absolute;
-      border: 10px solid rgba(252, 186, 248, 0.5);
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 100%;
-      z-index: 1;
-      -o-transition: 0.5s all;
-      transition: 0.5s all;
-      -webkit-transition: 0.5s all; }
-    #im-redondas li .view {
-      position: relative;
-      margin-bottom: 20px; }
-    #im-redondas li .mask {
-      position: absolute;
-      top: 39%;
-      text-align: center;
-      width: 100%; }
-      #im-redondas li .mask a {
-        text-decoration: none; }
-      #im-redondas li .mask .info {
-        width: 120px;
-        height: 46px;
-        background-image: -webkit-gradient(linear, left top, right top, from(#c68659), color-stop(51%, #d1ae85), to(white));
-        background-image: -webkit-linear-gradient(left, #c68659 0%, #d1ae85 51%, white 100%);
-        background-image: -o-linear-gradient(left, #c68659 0%, #d1ae85 51%, white 100%);
-        background-image: linear-gradient(to right, #c68659 0%, #d1ae85 51%, white 100%);
-        background-size: 200% auto;
-        color: #fff;
-        text-transform: uppercase;
-        display: block;
-        line-height: 46px;
-        margin: 0 auto;
-        border-radius: 25px;
-        font-size: 14px;
-        letter-spacing: 0;
-        font-weight: 500;
-        opacity: 0;
-        -o-transition: 0.7s all;
-        transition: 0.7s all;
-        -webkit-transition: 0.7s all;
-        z-index: 1;
-        position: relative; }
-    #im-redondas li .view-first:hover p {
-      opacity: 1;
-      visibility: visible;
-      z-index: 1; }
-    #im-redondas li .view:hover .img-redo::before {
-      border: 10px solid rgba(211, 175, 134, 0.5); }
-    #im-redondas li .txt-redondas {
-      font-family: 'Poppins', sans-serif;
-      padding-top: 20px;
-      font-size: 18px;
-      color: #c68659;
-      font-weight: 100;
-      text-decoration: none;
-      margin-top: 10px; }
-    #im-redondas li .txt-redondas:hover {
-      color: #664936; }
 
 /*-------------------------
         ventanas modal

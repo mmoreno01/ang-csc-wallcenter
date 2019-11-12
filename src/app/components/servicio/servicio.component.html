@@ -1,16 +1,21 @@
-<section id="content-servicio" style="padding: 100px 0px;">
+<section id="content-servicio" style="padding: 200px 0px;">
 
   <h1>servicio individual</h1>
   <div class="container">
       <div class="row">
         <div class="col-md-4">
-              <img [src]="servicio.img" class="img-fluid" [alt]="servicio.title">
+              <!-- <img [src]="servicio.img" class="img-fluid" [alt]="servicio.title"> -->
         </div>
         <div class="col-md-8">
 
+            <div *ngFor="let item of restData; let i = index" >
+                <a> {{ item.title }}</a>
+              </div>
+
+
         </div>
       </div>
-    <h5>{{ servicio.title }}</h5>
-    <p>{{ servicio.info }}</p>
+    <!-- <h5>{{ servicio.title }}</h5>
+    <p>{{ servicio.info }}</p> -->
   </div>
 </section>

@@ -13,107 +13,61 @@
         <div class="row">
               <div class="col-12 colum-content d-none d-lg-block">
                     <div class="content-principal">
-                        <div class="variety-selector cir_spa wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
-                            <a class="url active"  href="#cir3" title=""><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
-                            <a class="url "  href="#cir4" title=""><img src="./assets/image/inicio/spa/jpg/masajes.png" alt=""><i class="icon-icon2"></i></a>
-                            <a class="url "  href="#cir5" title=""><img src="./assets/image/inicio/spa/jpg/rituales.png" alt=""><i class="icon-icon3"></i></a>
-                            <a class="url "  href="#cir6" title=""><img src="./assets/image/inicio/spa/jpg/corporales1.png" alt=""><i class="icon-icon4"></i></a>
+                        <div  class="variety-selector cir_spa wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
+                            <a class="url active"  (click)="alerta='uno'" title=""><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
+                            <a class="url"          (click)="alerta='dos'" title=""><img src="./assets/image/inicio/spa/jpg/masajes.png"   alt=""><i class="icon-icon2"></i></a>
+                            <a class="url"          (click)="alerta='tres'" title=""><img src="./assets/image/inicio/spa/jpg/rituales.png"  alt=""><i class="icon-icon3"></i></a>
+                            <a class="url"          (click)="alerta='cuatro'" title=""><img src="./assets/image/inicio/spa/jpg/corporales1.png" alt=""><i class="icon-icon4"></i></a>
                         </div>
                         <div class="row">
-
                             <div class="circulos-secciones col-6">
-                                <article id="cir3">
-                                    <h1 class="wow animated fadeInDown"  data-wow-duration = "1s" data-wow-delay = "1s">Faciales</h1>
-                                    <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Con el paso del tiempo, la piel puede llenarse de impurezas, por eso es necesario recuperar la vitalidad de tu rostro, para lucir una apariencia renovada, fresca e hidratada.<br>
-                                    <a href="faciales.html" class="link-spa wow animated fadeInDown"  data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
-                                    </p>
-                                </article>
+                              <div [ngSwitch]="alerta">
+                                  <article  *ngSwitchCase="'uno'" id="cir3" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">uno</h1>
+                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Con el paso del tiempo, la piel puede llenarse de impurezas, por eso es necesario recuperar la vitalidad de tu rostro, para lucir una apariencia renovada, fresca e hidratada.<br>
+                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
+                                      </p>
+                                  </article>
+                                  <article  *ngSwitchCase="'dos'" id="cir4" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">dos</h1>
+                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Hemos creado un espacio dedicado al relajamiento y renovación de tu mente y cuerpo. Ayuda de manera natural a mantener la salud de tu cuerpo consiéntelo, escúchalo.. <br>
+                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
+                                      </p>
+                                  </article>
+                                  <article  *ngSwitchCase="'tres'" id="cir5" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">tres</h1>
+                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Olvídate de la rutina, Conecta tus sentidos, renuévate, equilibra tu energía y vive una experiencia CSC, logrando una armonía entre mente, cuerpo y espíritu. <br>
+                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
+                                      </p>
+                                  </article>
+                                  <article  *ngSwitchCase="'cuatro'" id="cir6" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">cuatro</h1>
+                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Mejora la calidad de tu vida y luce un aspecto saludable mediante nuestros planes nutricionales 100% personalizados. Nosotros te ayudamos a lograr tus objetivos. <br>
+                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
+                                      </p>
+                                  </article>
+                                  <article *ngSwitchDefault>
 
-                                 <article id="cir4">
-                                     <h1>Masajes</h1>
-                                     <p>Hemos creado un espacio dedicado al relajamiento y renovación de tu mente y cuerpo. Ayuda de manera natural a mantener la salud de tu cuerpo consiéntelo, escúchalo.<br>
-                                    <a href="servicios.html" class="link-spa">Conoce más</a>
-                                    </p>
-                                 </article>
+                                  </article>
+                              </div>
 
-                                 <article id="cir5">
-                                     <h1>Rituales Especiales</h1>
-                                     <p>Olvídate de la rutina, Conecta tus sentidos, renuévate, equilibra tu energía y vive una experiencia CSC, logrando una armonía entre mente, cuerpo y espíritu.<br>
-                                    <a href="rituales_especiales.html" class="link-spa">Conoce más</a>
-                                    </p>
-                                 </article>
-
-                                 <article id="cir6">
-                                    <h1>Tratamientos Corporales</h1>
-                                    <p>Dale a tu cuerpo el apapacho que necesita. Desintoxica tu cuerpo, obtén una silueta más firme, luce una piel tersa y moviliza la grasa para que pueda ser eliminada de manera natural.<br>
-                                    <a href="tratamientos_corporales.html" class="link-spa">Conoce más</a>
-                                    </p>
-                                 </article>
                             </div>
+
                             <div class="col-6">
                                 <video controls  src="/assets/video/SPA_fx_comprimido.mp4" type="video/mp4" class="video-spa wow animated fadeIn" data-wow-duration = "2s" data-wow-delay = "1s"></video>
                             </div>
+
                         </div>
+
                     </div>
               </div>
-        </div>
-        <div class="row d-lg-none" >
-            <div  class="col-md-12">
-                <div id="spa-carousel" class="owl-carousel owl-theme" >
-                    <div class="item">
-                         <div class="slider1 cuadrobelleza1 text-center" >
-                            <div>
-                                  <img src="./assets/image/inicio/spa/jpg/faciales.png" alt="" class="text-center" style="width: 200px">
-                              <div class="">
-                                  <h1 class=" titulo-spa-slider">Faciales</h1>
-                                  <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Con el paso del tiempo, la piel puede llenarse de impurezas, por eso es necesario recuperar la vitalidad de tu rostro, para lucir una piel renovada, fresca e hidratada.<br><br>
-                                  <a href="faciales.html" class="link-spa wow animated fadeInDown"  data-wow-duration = "1s" data-wow-delay = "1s" style="margin-bottom: 20px;">Conoce más...</a>
-                              </div>
-                            </div>
-                         </div>
-                    </div>
-            <div class="item">
-               <div class="slider1 cuadrobelleza1 text-center">
-                  <div>
-                      <img src="./assets/image/inicio/spa/jpg/rituales.png" alt="" class="text-center" style="width: 200px">
-                      <div class="">
-                          <h1 class="titulo-spa-slider">Rituales Especiales</h1>
-                    <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Olvídate de la rutina, Conecta tus sentidos, renuévate,  equilibra tu energía y vive una experiencia CSC, logrando una armonía entre mente, cuerpo y espíritu.<br><br>
-                    <a href="rituales_especiales.html" class="link-spa wow animated fadeInDown"  data-wow-duration = "1s" data-wow-delay = "1s" style="margin-bottom: 20px;">Conoce más...</a>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="item">
-               <div class="slider1 cuadrobelleza1 text-center" >
-                  <div>
-                      <img src="./assets/image/inicio/spa/jpg/masajes.png" alt="" class="text-center" style="width: 200px">
-                      <div class="">
-                          <h1 class="titulo-spa-slider">Masajes</h1>
-                    <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Hemos creado un espacio dedicado al relajamiento y renovación de tu mente y cuerpo. Ayuda de manera natural a mantener la salud de tu cuerpo, consiéntelo, escúchalo…<br><br>
-                    <a href="servicios.html" class="link-spa wow animated fadeInDown"  data-wow-duration = "1s" data-wow-delay = "1s" style="margin-bottom: 20px;">Conoce más...</a>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="item">
-                   <div class="slider1 cuadrobelleza1 text-center" >
-                  <div>
-                      <img src="./assets/image/inicio/spa/jpg/corporales1.png" alt="" class="text-center" style="width: 200px">
-                      <div class="">
-                          <h1 class="wow animated fadeInDown titulo-spa-slider" data-wow-duration = "1s" data-wow-delay = "1s">Tratamientos Corporales</h1>
-                    <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Dale a tu cuerpo el apapacho que necesita, Desintoxica tu cuerpo, obtén una silueta más firme, luce una piel más tersa y moviliza la grasa para que pueda ser eliminada naturalmente.<br><br>
-                    <a href="tratamientos_corporales.html" class="link-spa wow animated fadeInDown"  data-wow-duration = "1s" data-wow-delay = "1s" style="margin-bottom: 20px;">Conoce más...</a>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            </div>
-            </div>
-            <div class="col-md-12 text-center">
-                <video controls  src="./assets/video/SPA_fx_comprimido.mp4" type="video/mp4" class="video-spa wow animated fadeIn" data-wow-duration = "2s" data-wow-delay = "1s" ></video>
-            </div>
         </div>
     </div>
- </section>
+    <a class="url active"  (click)="alerta='uno'" title=""><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
+    <a class="url active"  (click)="alerta='uno'" title=""><img src="./assets/image/iconos-servicios/icon-02.png)" alt=""><i class="icon-icon1"></i></a>
+
+
+
+</section>
 <!--section spa-->
+

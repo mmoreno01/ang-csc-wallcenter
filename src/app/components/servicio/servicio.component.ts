@@ -9,8 +9,7 @@ import { ServiciosService } from '../../services/servicios.service';
 })
 export class ServicioComponent  {
 
-  
-  servicio: any = {};
+ servicio: any = {};
 
 
   constructor( private router: ActivatedRoute,
@@ -18,19 +17,21 @@ export class ServicioComponent  {
               {
                 //muesta servicio individual
                 this.router.params.subscribe( params => {
-                    this.getServicio( params['id'] );
-                    // console.log( params);
-        });
-   }
+                  this.servicio = this.serviciosService.getServicio(params['category_id']);
+                    // this.getServicio( params['id'] );
+                    console.log(params);
+                    console.log(this.servicio)
+                  });
+              }
 
- //obtiene la peticion del servicio
-    getServicio(id: string){
-        this.serviciosService.getServicio( id )
-        .subscribe(servicio => {
-          this.servicio = servicio;
-          // this.servicio = data;
-          console.log(servicio );
+//  obtiene la peticion del servicio
+    // getServicio(id: string){
+    //     this.serviciosService.getServicio( id )
+    //     .subscribe(servicio => {
+    //       this.servicio = servicio;
+    //       // this.servicio = data;
+    //       console.log(servicio );
 
-        });
-    }
+    //     });
+    // }
 }

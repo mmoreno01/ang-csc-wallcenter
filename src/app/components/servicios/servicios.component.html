@@ -1,59 +1,57 @@
 
 
-
-
-
 <section id="servicios" class="animated fadeIn">
   <div class="container">
-      <div class="text-center content-services">
-          <ul class="portfolio-filter">
-              <li class="active">
-                <a href="#" >Todos</a>
-              </li>
-              <li class="">
-                 <!-- <a [routerLink]="['/servicio,i']" routerLinkActive="router-link-active">Masajes</a> -->
-              </li>
-              <li class="">
-                <a href="#">Faciales</a>
-              </li>
-              <li class="">
-                <a href="#">Rituales Especiales</a>
-              </li>
-              <li class="">
-                <a href="#">Servicios Plus</a>
-              </li>
-              <li class="">
-                <a href="#">Aparatologia de Vanguardia</a>
-              </li>
-              <li class="">
-                <a href="#">Tratamientos corporales</a>
-              </li>
-              <li class="">
-                <a href="#">Medicina Estética</a>
-              </li>
-              <li class="">
-                <a href="#">Servicios Quirofísica</a>
-              </li>
-          </ul>
-        </div>
-      <div class="card-columns">
-            <div (click)="verServicio(servicio)" class="portfolio-item cat1 cat3" *ngFor="let servicio of servicios; let i = index">
-              <div class="thumb card animated fadeIn fast puntero">
-                  <img [src]="servicio.img" class="card-img-top" [alt]="servicio.title">
-                  <div class="portfolio-hover">
-                      <div class="action-btn">
-                          <span class="popup-link" title="lightbox view"> <i class="fas fa-plus"></i></span>
-                      </div>
-                      <div class="portfolio-description">
-                          <!-- <h4><a [routerLink]="['/servicio',i]" class="popup-link" title="lightbox view">{{servicio.title}}</a></h4> -->
-                          <h4 class="popup-link">{{servicio.title}}</h4>
-                          <p><a href="#">{{servicio.category_id}}</a></p>
-
-                      </div>
-                  </div>
+    <div class="content-title d-flex justify-content-center">
+      <h1>Nuestras Especialidades</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+         <ul>
+          <li class="btn"  (click)="verServicio(1)" (click)="mostrar = false">masajes</li>
+          <li class="btn"  (click)="verServicio(2)" (click)="mostrar = false">faciales</li>
+          <li class="btn"  (click)="verServicio(7)" (click)="mostrar = false">medicina estetica</li>
+          <li class="btn"  (click)="verServicio(6)" (click)="mostrar = false">tratamientos corporales</li>
+          <li class="btn"  (click)="verServicio(4)" (click)="mostrar = false">servicios plus</li>
+          <li class="btn"  (click)="verServicio(3)" (click)="mostrar = false">rituales especiales</li>
+          <li class="btn"  (click)="verServicio(8)" (click)="mostrar = false">quirofisica</li>
+          <li class="btn"  (click)="verServicio(5)" (click)="mostrar = false">aparatologia</li>
+        </ul>
+    </div>
+    <div class="row">
+      <div class="col-12" *ngIf="mostrar">
+          <div class="card mb-5" *ngFor="let item of servicios | slice:0:10">
+              <div class="row">
+                <div class="col-6">
+                    <img class="card-img-top" [src]="item.img" [alt]="item.title">
+                </div>
+                <div class="col-6">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.title }}</h5>
+                        <p class="card-text">{{ item.info }}</p>
+                        <a href="" class="btn">Reservar Cita</a>
+                    </div>
+                </div>
               </div>
           </div>
       </div>
+        <div class="col-12" >
+          <div class="card mb-5" *ngFor="let item of restData; let i = index">
+            <div class="row">
+              <div class="col-6">
+                  <img class="card-img-top" [src]="item.img" [alt]="item.title">
+              </div>
+              <div class="col-6">
+                  <div class="card-body">
+                      <h5 class="card-title">{{ item.title }}</h5>
+                      <p class="card-text">{{ item.info }}</p>
+                      <a href="" class="btn">Reservar Cita</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
- <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+</div>
 </section>

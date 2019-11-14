@@ -19,6 +19,8 @@
 #nav-menu {
   background-color: #7B5C0F;
   background-image: url("/src/assets/image/header-bg.png"); }
+  #nav-menu .menu li:hover > ul {
+    display: block; }
   #nav-menu .navbar-brand {
     position: absolute;
     text-align: left;

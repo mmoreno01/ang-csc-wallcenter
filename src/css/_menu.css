@@ -1,20 +1,39 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Arvo");
+#social-menu {
+  width: 100%;
+  /* hacemos que la cabecera ocupe el ancho completo de la página */
+  left: 0;
+  /* Posicionamos la cabecera al lado izquierdo */
+  top: 0;
+  /* Posicionamos la cabecera pegada arriba */
+  position: fixed;
+  /* Hacemos que la cabecera tenga una posición fija */
+  z-index: 3030; }
+  #social-menu .row {
+    margin: 0; }
+  #social-menu .social-item a {
+    margin: 3px;
+    color: #fff; }
+
 #nav-menu {
-  background-color: #d1ae85; }
+  background-color: #7B5C0F;
+  background-image: url("/src/assets/image/header-bg.png"); }
   #nav-menu .navbar-brand {
     position: absolute;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    right: 0;
-    top: 20px; }
+    margin: 20px 0 0 100px; }
+  #nav-menu .btn {
+    padding: 0; }
 
 #navbarSupportedContent ul {
-  margin: 0 auto;
+  margin: 50px 0 0 45%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
-  margin-top: 60px; }
+  text-align: right; }
 
 body,
 html {
@@ -31,7 +50,7 @@ html {
   width: 100%;
   height: 100%;
   background: #f5f4f4;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Arvo', monospace; }
   @supports ((display: -ms-grid) or (display: grid)) {
     body,
@@ -163,7 +182,7 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0 4px; }
+  padding: 0px; }
 
 /* Create four equal columns that sits next to each other */
 .column {
@@ -198,6 +217,8 @@ h1 {
     media querys
 ---------------------------*/
 @media (max-width: 992px) {
+  .social-item {
+    display: none; }
   #nav-menu .navbar-brand {
     position: relative;
     width: 0%;
@@ -228,6 +249,8 @@ h1 {
     text-align: center !important; } }
 
 @media (max-width: 768px) {
+  .social-item {
+    display: none; }
   .navbar-collapse {
     text-align: center;
     width: 100%; }

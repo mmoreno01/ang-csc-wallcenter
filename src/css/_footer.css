@@ -1,8 +1,12 @@
 footer {
-  background-color: #664936; }
+  background-color: #7B5C0F;
+  background-image: url("/src/assets/image/header-bg.png"); }
 
 footer {
-  padding: 30px 0px; }
+  padding: 10px 0 0 0; }
+
+.centered {
+  text-align: center; }
 
 .foter {
   font-family: "Poppins", sans-serif; }
@@ -19,7 +23,8 @@ footer {
       color: white;
       padding: 5px; }
   .foter #foter-redes {
-    background-color: #664936; }
+    background-color: #7B5C0F;
+    background-image: url("/src/assets/image/header-bg.png"); }
     .foter #foter-redes .content-icons {
       text-align: center;
       font-family: "Poppins", sans-serif;
@@ -31,7 +36,7 @@ footer {
       padding: 20px 0px; }
     .foter #foter-redes li {
       margin-left: 20px;
-      margin-top: 10px;
+      margin-top: 5px;
       color: white;
       font-size: 12px;
       list-style: none; }
@@ -54,7 +59,7 @@ footer {
 @media (max-width: 768px) {
   .foter {
     font-family: "Poppins", sans-serif;
-    background-color: #664936; }
+    background-color: #7B5C0F; }
     .foter ul {
       list-style: none;
       display: block;

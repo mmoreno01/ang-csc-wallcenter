@@ -2463,6 +2463,65 @@ footer {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
+#header-img .bg-header h1 {
+  color: #664936;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10px; }
+
+#cards_rituales {
+  background: #fff;
+  padding-bottom: 50px; }
+  #cards_rituales .card {
+    border: transparent; }
+    #cards_rituales .card .card-body {
+      padding: 10px;
+      height: 100%; }
+    #cards_rituales .card ul {
+      padding-left: 0px; }
+      #cards_rituales .card ul li {
+        list-style: none; }
+  #cards_rituales .card-1 {
+    background: #d1ae85;
+    color: #fff;
+    text-align: justify;
+    border-right: 5px solid #fff; }
+  #cards_rituales .card-1-text {
+    border: 2px solid #d1ae85;
+    color: #d1ae85; }
+  #cards_rituales .card-2 {
+    background: #664936;
+    color: #fff;
+    text-align: justify;
+    border-right: 5px solid #fff; }
+  #cards_rituales .card-2-text {
+    border: 2px solid #664936;
+    color: #664936; }
+  #cards_rituales .card-3 {
+    background: #b7b7b7;
+    color: #fff;
+    text-align: justify;
+    border-right: 5px solid #fff; }
+  #cards_rituales .card-3-text {
+    border: 2px solid #b7b7b7;
+    color: #b7b7b7; }
+  #cards_rituales .card-4 {
+    background: #d8c5d2;
+    color: #fff;
+    text-align: justify;
+    border-right: 5px solid #fff; }
+  #cards_rituales .card-4-text {
+    border: 2px solid #d8c5d2;
+    color: #d8c5d2; }
+  #cards_rituales .card-5 {
+    background: #ecc89e;
+    color: #fff;
+    text-align: justify;
+    border-right: 5px solid #fff; }
+  #cards_rituales .card-5-text {
+    border: 2px solid #ecc89e;
+    color: #ecc89e; }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

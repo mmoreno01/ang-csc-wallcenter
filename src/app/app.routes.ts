@@ -9,7 +9,7 @@ import { EliteHealthComponent } from './components/elite-health/elite-health.com
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ServicioComponent } from './components/servicio/servicio.component';
-
+import {RitualesEspecialesComponent } from'./components/rituales-especiales/rituales-especiales.component';
 
  export const ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
@@ -21,6 +21,8 @@ import { ServicioComponent } from './components/servicio/servicio.component';
   { path: 'contacto', component: ContactoComponent},
   { path: 'servicios', component: ServiciosComponent},
   { path: 'servicio/:id', component: ServicioComponent},
+  { path: 'rituales-especiales', component: RitualesEspecialesComponent},
+
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];

@@ -9,18 +9,24 @@
         </p>
         <div class="img-csc">
           <ul>
-            <li>
-              <img src="../../../assets/image/inicio/centrodebelleza.jpg" alt="">
-              <p class="title-csc">Centro de Belleza</p>
-            </li>
-            <li>
-              <img src="../../../assets/image/inicio/spa.jpg" alt="">
-              <p class="title-csc">SPA</p>
-            </li>
-            <li>
-              <img src="../../../assets/image/inicio/centrodebienestar.jpg" alt="">
-              <p class="title-csc">Centro de Bienestar</p>
-            </li>
+              <li>
+                <a [routerLink]="['/belleza']">
+                  <img src="../../../assets/image/inicio/centrodebelleza.jpg" alt="">
+                  <p class="title-csc">Centro de Belleza</p>
+                </a>
+              </li>
+              <li>
+                  <a [routerLink]="['/spa']">
+                    <img src="../../../assets/image/inicio/spa.jpg" alt="">
+                    <p class="title-csc">SPA</p>
+                  </a>
+              </li>
+              <li>
+                  <a [routerLink]="['/bienestar']">
+                    <img src="../../../assets/image/inicio/centrodebienestar.jpg" alt="">
+                    <p class="title-csc">Centro de Bienestar</p>
+                  </a>
+              </li>
           </ul>
         </div>
       </div>

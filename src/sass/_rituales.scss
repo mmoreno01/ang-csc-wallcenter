@@ -1,0 +1,83 @@
+#header-img{
+  .bg-header{
+        h1{
+          color: #664936;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 10px;
+      }
+  }
+
+  }
+
+#cards_rituales{
+  background: #fff;
+  padding-bottom: 50px;
+
+  .card{
+    border: transparent;
+    .card-body {
+      padding: 10px;
+      height: 100%;
+    }
+    ul{
+      padding-left:0px;
+      li{
+        list-style: none;
+      }
+    }
+  }
+  .card-1{
+    background: #d1ae85;
+    color:#fff;
+    text-align: justify;
+    border-right: 5px solid #fff;
+  }
+  .card-1-text{
+    border: 2px solid #d1ae85;
+    color:#d1ae85;
+  }
+  .card-2{
+    background: #664936;
+    color:#fff;
+    text-align: justify;
+    border-right: 5px solid #fff;
+  }
+  .card-2-text{
+    border: 2px solid #664936;
+    color:#664936;
+  }
+  .card-3{
+    background: #b7b7b7;
+    color:#fff;
+    text-align: justify;
+    border-right: 5px solid #fff;
+  }
+  .card-3-text{
+    border: 2px solid #b7b7b7;
+    color:#b7b7b7;
+  }
+  .card-4{
+    background: #d8c5d2;
+    color:#fff;
+    text-align: justify;
+    border-right: 5px solid #fff;
+  }
+  .card-4-text{
+    border: 2px solid #d8c5d2;
+    color: #d8c5d2;
+  }
+  .card-5{
+    background: #ecc89e;
+    color:#fff;
+    text-align: justify;
+    border-right: 5px solid #fff;
+  }
+  .card-5-text{
+    border: 2px solid #ecc89e;
+    color: #ecc89e;
+  }
+}
+
+
+

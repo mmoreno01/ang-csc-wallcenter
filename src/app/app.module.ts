@@ -39,6 +39,7 @@ import { ServiciosService } from './services/servicios.service';
 import { AreasService } from './services/areas.service';
 import { CscComponent } from './components/csc/csc.component';
 import { DataPipe } from './pipes/data.pipe';
+import { RitualesEspecialesComponent } from './components/rituales-especiales/rituales-especiales.component';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { DataPipe } from './pipes/data.pipe';
     SearchComponent,
     heroSwitchComponents,
     CscComponent,
-    DataPipe
+    DataPipe,
+    RitualesEspecialesComponent
   ],
   imports: [
       BrowserModule,

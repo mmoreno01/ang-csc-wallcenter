@@ -32,16 +32,6 @@
       <!-- <li class="nav-item arriba">
         <a class="nav-link text-white" href="index.html#conocenos">Conócenos</a>
       </li> -->
-      <!-- <li class="nav-item dropdown arriba">
-        <a class="nav-link text-white dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Wellness Center
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" [routerLink]="['belleza']">Centro de Belleza</a>
-          <a class="dropdown-item" [routerLink]="['spa']">Spa</a>
-          <a class="dropdown-item" [routerLink]="['bienestar']">Centro de Bienestar</a>
-        </div>
-      </li> -->
       <!-- <li class="nav-item arriba">
         <a class="nav-link text-white"[routerLink]="['galeria']">Galería</a>
       </li> -->
@@ -49,18 +39,24 @@
             <a class="nav-link text-white"  [routerLink]="['servicios']">Servicios</a>
       </li> -->
       <div class="dropdown">
-          <button  class="btn" type="button" id="ServiciosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            <a class="nav-link text-white"  [routerLink]="['servicios']">Servicios</a>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="ServiciosMenu">
-            <button class="dropdown-item" type="button">Masajes</button>
-            <button class="dropdown-item" type="button">Faciales</button>
-            <button class="dropdown-item" type="button">Medicina Estética</button>
-            <button class="dropdown-item" type="button">Tratamientos corporales quirofisica</button>
-            <button class="dropdown-item" type="button">Servicios Plus</button>
-            <button class="dropdown-item" type="button">Aparatologia de Vanguardia</button>
-            <button class="dropdown-item" type="button">Rituales especiales</button>
-          </div>
+        <button class="dropbtn">Wellness Center</button>
+        <div class="dropdown-content">
+          <a  [routerLink]="['belleza']">Centro de Belleza</a>
+          <a  [routerLink]="['spa']">Spa</a>
+          <a  [routerLink]="['bienestar']">Centro de Bienestar</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a [routerLink]="['servicios']">Servicios</a></button>
+        <!-- <div class="dropdown-content">
+          <a  [routerLink]="['belleza']">Masajes</a>
+          <button  (click)="verServicio(2)">Faciales</button>
+          <a  [routerLink]="['bienestar']">Medicina Estética</a>
+          <a  [routerLink]="['bienestar']">Tratamientos corporales quirofisica</a>
+          <a  [routerLink]="['bienestar']">Servicios Plus</a>
+          <a  [routerLink]="['bienestar']">Aparatologia de Vanguardia</a>
+          <a  [routerLink]="['bienestar']">Rituales especiales</a>
+        </div> -->
       </div>
       <li class="nav-item arriba">
         <a class="nav-link text-white"  [routerLink]="['#']">Elite healt</a>

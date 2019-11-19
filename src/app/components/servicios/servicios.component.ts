@@ -16,6 +16,7 @@ export class ServiciosComponent implements OnInit {
   restData: any [] = [];
   servicios:any = {};
   mostrar= "true";
+  ritualEspecial ="false";
 
   p: number= 1;
 

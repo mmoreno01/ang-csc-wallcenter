@@ -56,3 +56,29 @@
   #cards_rituales .card-5-text {
     border: 2px solid #ecc89e;
     color: #ecc89e; }
+
+@media (max-width: 768px) {
+  #cards_rituales .card-1 {
+    border-right: 0px; }
+  #cards_rituales .card-2 {
+    border-right: 0px; }
+  #cards_rituales .card-3 {
+    border-right: 0px; }
+  #cards_rituales .card-4 {
+    border-right: 0px; }
+  #cards_rituales .card-5 {
+    border-right: 0px; } }
+
+@media (max-width: 576px) {
+  #header-img .bg-header h1 {
+    text-align: center; }
+  #cards_rituales .card-1 {
+    border-right: 0px; }
+  #cards_rituales .card-2 {
+    border-right: 0px; }
+  #cards_rituales .card-3 {
+    border-right: 0px; }
+  #cards_rituales .card-4 {
+    border-right: 0px; }
+  #cards_rituales .card-5 {
+    border-right: 0px; } }

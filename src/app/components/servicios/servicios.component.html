@@ -22,10 +22,10 @@
       <div class="col-12" *ngIf="mostrar">
           <div class="card mb-5 animated fadeIn" *ngFor="let item of servicios | slice:0:10">
               <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <img class="card-img-top" [src]="item.img" [alt]="item.title">
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card-body">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <p class="card-text">{{ item.info }}</p>
@@ -35,13 +35,14 @@
               </div>
           </div>
       </div>
-        <div class="col-12" >
+ 
+        <div class="col-md-12">
           <div class="card mb-5 animated fadeIn" *ngFor="let item of restData; let i = index">
             <div class="row">
-              <div class="col-6">
+              <div class="col-md-6">
                   <img class="card-img-top" [src]="item.img" [alt]="item.title">
               </div>
-              <div class="col-6">
+              <div class="col-md-6">
                   <div class="card-body">
                       <h5 class="card-title">{{ item.title }}</h5>
                       <p class="card-text">{{ item.info }}</p>

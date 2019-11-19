@@ -14,34 +14,34 @@
               <div class="col-12 colum-content d-none d-lg-block">
                     <div class="content-principal">
                         <div  class="variety-selector cir_spa wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
-                            <a class="url active"  (click)="alerta='uno'" title=""><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
-                            <a class="url"          (click)="alerta='dos'" title=""><img src="./assets/image/inicio/spa/jpg/masajes.png"   alt=""><i class="icon-icon2"></i></a>
-                            <a class="url"          (click)="alerta='tres'" title=""><img src="./assets/image/inicio/spa/jpg/rituales.png"  alt=""><i class="icon-icon3"></i></a>
-                            <a class="url"          (click)="alerta='cuatro'" title=""><img src="./assets/image/inicio/spa/jpg/corporales1.png" alt=""><i class="icon-icon4"></i></a>
+                            <a class="url active"  (click)="alerta='faciales'" title=""><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
+                            <a class="url"          (click)="alerta='masajes'" title=""><img src="./assets/image/inicio/spa/jpg/masajes.png"   alt=""><i class="icon-icon2"></i></a>
+                            <a class="url"          (click)="alerta='rituales'" title=""><img src="./assets/image/inicio/spa/jpg/rituales.png"  alt=""><i class="icon-icon3"></i></a>
+                            <a class="url"          (click)="alerta='tratamientos'" title=""><img src="./assets/image/inicio/spa/jpg/corporales1.png" alt=""><i class="icon-icon4"></i></a>
                         </div>
                         <div class="row">
                             <div class="circulos-secciones col-6">
                               <div [ngSwitch]="alerta">
-                                  <article  *ngSwitchCase="'uno'" id="cir3" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">uno</h1>
+                                  <article  *ngSwitchCase="'faciales'" id="cir3" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">faciales</h1>
                                       <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Con el paso del tiempo, la piel puede llenarse de impurezas, por eso es necesario recuperar la vitalidad de tu rostro, para lucir una apariencia renovada, fresca e hidratada.<br>
                                       <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
                                       </p>
                                   </article>
-                                  <article  *ngSwitchCase="'dos'" id="cir4" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">dos</h1>
+                                  <article  *ngSwitchCase="'masajes'" id="cir4" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">masajes</h1>
                                       <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Hemos creado un espacio dedicado al relajamiento y renovación de tu mente y cuerpo. Ayuda de manera natural a mantener la salud de tu cuerpo consiéntelo, escúchalo.. <br>
                                       <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
                                       </p>
                                   </article>
-                                  <article  *ngSwitchCase="'tres'" id="cir5" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">tres</h1>
+                                  <article  *ngSwitchCase="'rituales'" id="cir5" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">rituales especiales</h1>
                                       <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Olvídate de la rutina, Conecta tus sentidos, renuévate, equilibra tu energía y vive una experiencia CSC, logrando una armonía entre mente, cuerpo y espíritu. <br>
                                       <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
                                       </p>
                                   </article>
-                                  <article  *ngSwitchCase="'cuatro'" id="cir6" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">cuatro</h1>
+                                  <article  *ngSwitchCase="'tratamientos'" id="cir6" class="">
+                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">tratamientos corporales</h1>
                                       <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Mejora la calidad de tu vida y luce un aspecto saludable mediante nuestros planes nutricionales 100% personalizados. Nosotros te ayudamos a lograr tus objetivos. <br>
                                       <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
                                       </p>
@@ -54,17 +54,53 @@
                             </div>
 
                             <div class="col-6">
-                                <video controls  src="/assets/video/SPA_fx_comprimido.mp4" type="video/mp4" class="video-spa wow animated fadeIn" data-wow-duration = "2s" data-wow-delay = "1s"></video>
+                                <video controls  src="../../../assets/video/SPA_fx_comprimido.mp4" type="video/mp4" class="video-spa wow animated fadeIn" data-wow-duration = "2s" data-wow-delay = "1s"></video>
                             </div>
 
                         </div>
-
+                      
                     </div>
               </div>
         </div>
+        <div id="spa-carousel" class="row d-lg-none">
+                    <div  class="col-md-12">
+                                <owl-carousel-o [options]="customOptions">
+                                    <ng-template carouselSlide owlcarousel>
+                                            <div class="">
+                                                    <div class="slider2 cuadrobelleza1 text-center">
+                                                     <div>
+                                                       <img src="./assets/image/inicio/bienestar/jpg/nutricion.png" alt="" class="text-center" style="width: 200px">
+                                                         <div class="">
+                                                             <h1 class="wow animated fadeInDown titulo-spa-slider" data-wow-duration = "1s" data-wow-delay = "1s">Nutrición</h1>
+                                                       <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Mejora la calidad de vida y luce un aspecto saludable mediante nuestro planes nutricionales  100% personalizados. Logra tus objetivos, nosotros te ayudamos.<br><br>
+                                                     <a href="servicios.html" class="link-bienestar">Conoce más...</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                               </div>
+                                    </ng-template>  
+                                    <ng-template carouselSlide>
+                                            <div class="">
+                                                    <div class="slider2 cuadrobelleza1 text-center">
+                                                       <div>
+                                                           <img src="./assets/image/inicio/bienestar/jpg/quirofisica.png" alt="" class="text-center" style="width: 200px">
+                                                           <div class="">
+                                                               <h1 class="titulo-spa-slider" >Terapia Quirofísica</h1>
+                                                         <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">A través de un modelo integral, disfruta de una atención complementaria que te ayudará a mitigar el dolor causado por diversos factores con la finalidad de reestablecer, recuperar o mantener tu salud.<br><br>
+                                                       <a href="quirofisica.html" class="link-bienestar">Conoce más...</a>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                                 </div>
+                                    </ng-template>  
+                                </owl-carousel-o>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <video controls  src="./assets/video/Bienestar_fx_comprimido.mp4" type="video/mp4" class="video-bienestar wow animated fadeIn"  data-wow-duration = "2s" data-wow-delay = "1s"></video>
+                    </div>
+                </div>
     </div>
-    <a class="url active"  (click)="alerta='uno'" title=""><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
-    <a class="url active"  (click)="alerta='uno'" title=""><img src="./assets/image/iconos-servicios/icon-02.png)" alt=""><i class="icon-icon1"></i></a>
+   
 
 
 

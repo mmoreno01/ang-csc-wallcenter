@@ -10,7 +10,7 @@ import { Hero, heroes } from '../../hero';
 })
 export class SpaComponent   {
 
-  alerta:string ="uno";
+  alerta:string ="faciales";
 
   heroes  = heroes;
   hero = this.heroes[0];
@@ -23,5 +23,40 @@ export class SpaComponent   {
 
   trackById(index: number, hero: Hero): number { return hero.id; }
 
+  
+  //  owl carousel
+  customOptions: any = {
+    items: 1,
+    // loop: true,
+    // autoplay: true,
+    margin:10,
+    // center: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1,
+        // loop:true
+      },
+      546: {
+        items: 2,
+        // loop:true
+      },
+      768: {
+        items: 2,
+        // loop:true
+      },
+      992: {
+        items: 2,
+        // loop:true
+      },
+
+    },
+    nav: true
+  }
 
 }

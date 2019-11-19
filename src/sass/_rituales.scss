@@ -80,4 +80,51 @@
 }
 
 
+// media queries
+@media(max-width:768px){
+  #cards_rituales{
+    .card-1{
+      border-right: 0px;
+    }
+    .card-2{
+      border-right: 0px;
+    }
+    .card-3{
+      border-right: 0px;
+    }
+    .card-4{
+      border-right: 0px;
+    }
+    .card-5{
+      border-right: 0px;
+    }
+  }
+}
+
+@media(max-width:576px){
+  #header-img{
+    .bg-header{
+          h1 {
+            text-align: center;
+        }
+    }
+  }  
+  #cards_rituales{ 
+    .card-1{
+      border-right: 0px;
+    }
+    .card-2{
+      border-right: 0px;
+    }
+    .card-3{
+      border-right: 0px;
+    }
+    .card-4{
+      border-right: 0px;
+    }
+    .card-5{
+      border-right: 0px;
+    }
+  }
+}
 

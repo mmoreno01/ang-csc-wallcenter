@@ -9,27 +9,29 @@
               <owl-carousel-o [options]="customOptions" >
                   <ng-container  *ngFor='let post of posts'>
                       <ng-template  carouselSlide [id]="post.id" >
+                          <a href="{{post.link}}">
+
                         <div class="img-tip">
                             <img src="{{post._embedded['wp:featuredmedia'][0].source_url}}">
                         </div>
-                        <div class="content-info">
-                              <h5>
-                                <a href="{{post.link}}"><p class="titutlo-noticia">{{ post.title.rendered }}</p></a>
-                              </h5>
-                              <p>{{ post.excerpt.rendered | truncate: 100 }}</p>
-                              <p>
-                                <a href="{{post.link}}" target="_blank"><label>Ver más</label></a>
-                              </p>
+                     
+                          <div class="content-info">
+                              <h5 class="titutlo-noticia">{{ post.title.rendered }} </h5>
+                              <p [innerHtml]="post.excerpt.rendered | truncate: 100"></p>
+                              <!-- <a href="{{post.link}}" target="_blank"><label>Ver más</label></a> -->
                               <div class="tips-star">
                                   <span><i class="fas fa-star" ></i></span>
                                   <span><i class="fas fa-star"></i></span>
                                   <span><i class="fas fa-star"></i></span>
                                   <span><i class="fas fa-star"></i></span>
                                   <span><i class="fas fa-star"></i></span>
+
                               </div>
                         </div>
+                      </a>
 
                       </ng-template>
+
                   </ng-container>
                 </owl-carousel-o>
           </div>

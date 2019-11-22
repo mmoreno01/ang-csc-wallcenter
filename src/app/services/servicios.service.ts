@@ -9,6 +9,8 @@ import { map } from 'rxjs/operators'
 export class ServiciosService {
 
   servcio:any []=[];
+  obj:any []=[];
+  obj2:any []=[];
 
 
   constructor( private http: HttpClient) {
@@ -81,7 +83,7 @@ gallery = [
 ]
 
 getGallery(){
-  return this.gallery;
+    return this.gallery;
 }
 
 getService(idx:string){

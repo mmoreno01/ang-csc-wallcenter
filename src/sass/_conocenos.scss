@@ -119,6 +119,7 @@ video
     display: flex;
     justify-content: center;
     padding-inline-start: 0px;
+    transition: all ease-in .3s;
     li{
       display:inline-block;
       margin-left: 20px;
@@ -133,7 +134,14 @@ video
         text-align: center;
         padding-top: 10px;
       }
-     
+      a{
+        text-decoration:none;
+      }
+    }
+    li:hover{
+        opacity: .8;
+        transition: all ease-in .1s;
+        
     }
 
   }

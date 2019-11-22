@@ -87,7 +87,10 @@ video {
       -ms-flex-pack: center;
       justify-content: center;
       -webkit-padding-start: 0px;
-      padding-inline-start: 0px; }
+      padding-inline-start: 0px;
+      -webkit-transition: all ease-in .3s;
+      -o-transition: all ease-in .3s;
+      transition: all ease-in .3s; }
       #conocenos .img-csc ul li {
         display: inline-block;
         margin-left: 20px; }
@@ -100,6 +103,13 @@ video {
           padding: 0;
           text-align: center;
           padding-top: 10px; }
+        #conocenos .img-csc ul li a {
+          text-decoration: none; }
+      #conocenos .img-csc ul li:hover {
+        opacity: .8;
+        -webkit-transition: all ease-in .1s;
+        -o-transition: all ease-in .1s;
+        transition: all ease-in .1s; }
 
 #carrusel-principal {
   position: relative;

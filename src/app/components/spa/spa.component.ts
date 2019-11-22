@@ -27,7 +27,7 @@ export class SpaComponent   {
   //  owl carousel
   customOptions: any = {
     items: 1,
-    // loop: true,
+    loop: true,
     // autoplay: true,
     margin:10,
     // center: true,

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Arvo");
 #social-menu {
+  background-color: #E0A81C;
   width: 100%;
   /* hacemos que la cabecera ocupe el ancho completo de la página */
   left: 0;
@@ -9,12 +10,24 @@
   /* Posicionamos la cabecera pegada arriba */
   position: fixed;
   /* Hacemos que la cabecera tenga una posición fija */
-  z-index: 3030; }
+  z-index: 3030;
+  color: #fff; }
   #social-menu .row {
     margin: 0; }
-  #social-menu .social-item a {
-    margin: 3px;
-    color: #fff; }
+    #social-menu .row .social-item {
+      margin: 3px 0 3px 95px; }
+      #social-menu .row .social-item a {
+        margin: 3px;
+        color: #fff; }
+    #social-menu .row .ndmobile {
+      padding: 3px 0 3px 0;
+      z-index: 3030;
+      text-align: right; }
+      #social-menu .row .ndmobile a {
+        color: #fff !important;
+        text-decoration: none; }
+    #social-menu .row .sdmobile {
+      visibility: hidden; }
 
 #nav-menu {
   background-color: #7B5C0F;
@@ -25,7 +38,9 @@
     position: absolute;
     text-align: left;
     width: 100%;
-    margin: 20px 0 0 100px; }
+    margin: 17px 0 0 100px; }
+  #nav-menu .navbar-toggler {
+    margin-top: 45px; }
   #nav-menu .btn {
     padding: 0; }
 
@@ -263,12 +278,17 @@ h1 {
     media querys
 ---------------------------*/
 @media (max-width: 992px) {
-  .social-item {
-    display: none; }
+  #social-menu .row .social-item {
+    margin: 3px 0 3px 0px;
+    text-align: center; }
+  #social-menu .ndmobile {
+    display: none !important; }
+  #social-menu .sdmobile {
+    visibility: visible !important; }
   #nav-menu .navbar-brand {
     position: relative;
     width: 0%;
-    top: 0px; }
+    top: 15px; }
   #nav-menu .navbar-nav {
     text-align: left; }
   #navbarSupportedContent ul {
@@ -295,8 +315,11 @@ h1 {
     text-align: center !important; } }
 
 @media (max-width: 768px) {
-  .social-item {
-    display: none; }
+  #social-menu .row .social-item {
+    margin: 3px 0 3px 0px;
+    text-align: center; }
+  #social-menu .ndmobile {
+    display: none !important; }
   .navbar-collapse {
     text-align: center;
     width: 100%; }
@@ -307,6 +330,11 @@ h1 {
         width: 100%; } }
 
 @media (max-width: 576px) {
+  #social-menu .row .social-item {
+    margin: 3px 0 3px 0px;
+    text-align: center; }
+  #social-menu .ndmobile {
+    display: none !important; }
   .navbar-collapse {
     text-align: center; }
     .navbar-collapse ul {

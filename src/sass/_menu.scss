@@ -1,20 +1,38 @@
 @import"variables";
 
 #social-menu{
+  background-color: #E0A81C; 
   width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
   position: fixed; /* Hacemos que la cabecera tenga una posición fija */
   z-index: 3030;
+  color: #fff;
   .row{
     margin: 0;
+    .social-item{
+      margin: 3px 0 3px 95px;
+      a{
+        margin: 3px;
+        color: #fff;
+      }
+     }
+     .ndmobile{
+      padding: 3px 0 3px 0; 
+      z-index: 3030;
+      text-align: right;
+      
+      a{
+        color: #fff !important;
+        text-decoration: none;
+      }
+    }
+    .sdmobile{
+      visibility: hidden;
+    }
   }
-.social-item{
-  a{
-    margin: 3px;
-    color: #fff;
-  }
- }
+
+ 
 }
 
 #nav-menu{
@@ -28,9 +46,13 @@ background-image: url("/src/assets/image/header-bg.png");
     position: absolute;
     text-align: left;
     width: 100%;
-    margin: 20px 0 0 100px;
+    margin: 17px 0 0 100px;
     //height: 120px;
     //top: 20px;
+    
+}
+.navbar-toggler{
+  margin-top: 45px;
 }
 .btn{
   padding: 0;
@@ -302,21 +324,32 @@ h1 {
 
 @media (max-width:992px)
 {
-  .social-item{
-    display: none;
+  #social-menu {
+    .row .social-item{
+      margin: 3px 0 3px 0px;
+      text-align: center;
+    }
+    .ndmobile{
+      display: none !important;
+    }
+    .sdmobile{
+      visibility: visible !important;
+    }
 
   }
+
     #nav-menu
     {
         .navbar-brand
         {
             position: relative;
             width: 0%;
-            top: 0px;
+            top: 15px;
         }
         .navbar-nav
         {
             text-align: left;
+
         }
     }
 
@@ -357,9 +390,14 @@ h1 {
 
 @media (max-width:768px)
 {
-  .social-item{
-    display: none;
-
+  #social-menu {
+    .row .social-item{
+      margin: 3px 0 3px 0px;
+      text-align: center;
+    }
+    .ndmobile{
+      display: none !important;
+    }
   }
     .navbar-collapse
     {
@@ -378,6 +416,15 @@ h1 {
 
 @media (max-width:576px)
 {
+  #social-menu {
+    .row .social-item{
+      margin: 3px 0 3px 0px;
+      text-align: center;
+    }
+    .ndmobile{
+      display: none !important;
+    }
+  }
     .navbar-collapse
     {
         text-align: center;

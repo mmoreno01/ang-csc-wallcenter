@@ -26,7 +26,7 @@ export class TipsComponent implements OnInit {
         // loop:true
       },
       546: {
-        items: 2,
+        items: 1,
         // loop:true
       },
       768: {

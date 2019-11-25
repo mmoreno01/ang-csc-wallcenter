@@ -6,14 +6,23 @@ import { ServiciosService } from '../../services/servicios.service';
   templateUrl: './body.component.html',
 })
 export class BodyComponent implements OnInit {
+   
+  
+  //  currentImage: any =[];
 
-  imgsGallery = [];
+  imgsGallery: any= [];
 
-  constructor(private _gallery: ServiciosService) { }
+  constructor(private _gallery: ServiciosService) {
+      //inicializamos con la primera imagen
+      // this.currentImage = this.updateRandomImage();
+      // console.log(this.currentImage);
+  }
+
+  
 
   ngOnInit() {
     this.imgsGallery = this._gallery.getGallery();
-    // console.log(this.imgsGallery);
+    console.log(this.imgsGallery);
   }
 
 }

@@ -431,7 +431,10 @@ video {
       -ms-flex-pack: center;
       justify-content: center;
       -webkit-padding-start: 0px;
-      padding-inline-start: 0px; }
+      padding-inline-start: 0px;
+      -webkit-transition: all ease-in .3s;
+      -o-transition: all ease-in .3s;
+      transition: all ease-in .3s; }
       #conocenos .img-csc ul li {
         display: inline-block;
         margin-left: 20px; }
@@ -444,6 +447,13 @@ video {
           padding: 0;
           text-align: center;
           padding-top: 10px; }
+        #conocenos .img-csc ul li a {
+          text-decoration: none; }
+      #conocenos .img-csc ul li:hover {
+        opacity: .8;
+        -webkit-transition: all ease-in .1s;
+        -o-transition: all ease-in .1s;
+        transition: all ease-in .1s; }
 
 #carrusel-principal {
   position: relative;
@@ -810,6 +820,8 @@ video {
   margin-top: -7px;
   width: 100%;
   height: auto; }
+  #section-tips a {
+    text-decoration: none; }
   #section-tips .title-sblog {
     color: #c68659;
     font-family: 'Poppins', sans-serif;
@@ -854,10 +866,11 @@ video {
       border-top-left-radius: 100%;
       width: 266px;
       height: 257px; }
-  #section-tips .content-info h5 a {
+  #section-tips .content-info h5 {
     color: #c68659; }
-  #section-tips .content-info p a {
-    color: #c68659; }
+  #section-tips .content-info p {
+    text-align: justify;
+    color: #000; }
   #section-tips .txt-tip {
     padding-top: 0;
     padding-bottom: 0;
@@ -882,12 +895,17 @@ video {
     #section-tips .tips-star span i {
       color: #c68659; }
   #section-tips .owl-item {
-    background-color: transparent;
-    -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
+    background-color: #fff0eb;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
-    border: 1px solid #e2e2e2;
+    border: 2px solid #f9d6be;
     padding: 20px; }
+  #section-tips .owl-item:hover {
+    -webkit-box-shadow: 0 5px 40px rgba(161, 140, 140, 0.05);
+    box-shadow: 0 5px 40px rgba(161, 140, 140, 0.05);
+    border: 3px solid #f9d6be;
+    opacity: .8; }
 
 @media (max-width: 992px) {
   #section-tips .img-tip img {
@@ -1087,7 +1105,7 @@ footer {
       text-align: center;
       color: #c68659;
       font-weight: bold;
-      padding: 50px 0 10px; }
+      padding-top: 20px; }
     #seccion-spa .slider1 p {
       text-align: justify;
       padding: 0px 20px 0px;
@@ -1112,6 +1130,10 @@ footer {
   transform: translateY(-50%); }
   .variety-selector img {
     width: 110px; }
+  .variety-selector a {
+    cursor: pointer; }
+  .variety-selector a:hover {
+    opacity: .7; }
 
 .variety-selector a.active i {
   opacity: 1;
@@ -1130,7 +1152,8 @@ footer {
   top: 50%;
   width: 100%;
   z-index: 100;
-  opacity: 0; }
+  opacity: 0;
+  cursor: pointer; }
 
 .variety-selector > a.active {
   border: 8px solid red;
@@ -1210,9 +1233,7 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
-    margin-bottom: 30px;
-    margin-top: 50px; }
+    font-size: 20px; }
   #section-two-spa p {
     font-size: 15px;
     text-align: center;
@@ -1444,7 +1465,7 @@ footer {
     color: #7aa9da;
     font-weight: bold;
     margin-bottom: 10px;
-    padding: 50px 0 10px; }
+    padding-top: 20px; }
 
 /*--------------------------
     style new section
@@ -1737,7 +1758,7 @@ footer {
       font-size: 28px;
       text-align: center;
       font-weight: bold;
-      padding: 50px 0 10px; }
+      padding-top: 10px; }
     #seccion-bienestar .slider2 p {
       text-align: justify;
       padding: 0px 20px 0px;

@@ -1,7 +1,7 @@
 <section id="conocenos">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12 col-lg-6">
         <h1 class="wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">Conócenos</h1>
         <p class="contenidos-ti wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">Olvídate de la rutina diaria, descubre en CSC Wellness Center un nuevo concepto integral que combina la belleza, bienestar y salud, donde te ofreceremos un espacio exclusivo para conectar tus sentidos, y crear armonía entre mente y cuerpo, permitiendo vivir una experiencia CSC.</p>
         <p class="contenidos-ti wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
@@ -30,10 +30,13 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-12 col-lg-6 d-flex align-items-center">
         <div class="card-columns">
-          <div class="card" *ngFor="let item of imgsGallery">
-            <img [src]="item.img" class="card-img-top" alt="">
+          <div class="card" *ngFor="let item of imgsGallery | slice: 0:9">
+            <a  id="single_image" data-fancybox="gallery" [href]="item.img">
+                <img [src]="item.img" class="card-img-top" alt="">
+
+            </a>
           </div>
         </div>
       </div>

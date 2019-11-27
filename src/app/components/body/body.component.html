@@ -30,13 +30,14 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-12 col-lg-6 d-flex align-items-center">
+      <div class="col-md-12 col-lg-6 d-flex align-items-center to-animate ">
         <div class="card-columns">
           <div class="card" *ngFor="let item of imgsGallery | slice: 0:9">
-            <a  id="single_image" data-fancybox="gallery" [href]="item.img">
-                <img [src]="item.img" class="card-img-top" alt="">
+              <a  id="single_image" data-fancybox="gallery" [href]="item.img">
+                  <img [src]="item.img" class="card-img" alt="">
+                  <div class="over"></div>              
 
-            </a>
+              </a>
           </div>
         </div>
       </div>

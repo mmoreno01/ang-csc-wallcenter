@@ -426,6 +426,74 @@ video {
         -webkit-transition: all ease-in .1s;
         -o-transition: all ease-in .1s;
         transition: all ease-in .1s; }
+  #conocenos .card-columns .card {
+    position: relative;
+    overflow: hidden; }
+    #conocenos .card-columns .card .fa-plus-circle {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 70px;
+      color: red;
+      -webkit-transition: all ease 400ms;
+      -o-transition: all ease 400ms;
+      transition: all ease 400ms;
+      -webkit-transition-delay: 100ms;
+      -o-transition-delay: 100ms;
+      transition-delay: 100ms;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      opacity: 0;
+      z-index: 2; }
+    #conocenos .card-columns .card .card-content:hover i {
+      color: #fff;
+      opacity: 1; }
+    #conocenos .card-columns .card .over {
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      -webkit-transition: all ease 900ms;
+      -o-transition: all ease 900ms;
+      transition: all ease 900ms; }
+    #conocenos .card-columns .card .over:hover {
+      opacity: .9; }
+    #conocenos .card-columns .card a .marcos {
+      top: 5%;
+      left: 5%;
+      z-index: 3;
+      position: absolute;
+      -webkit-transition: all ease 600ms;
+      -o-transition: all ease 600ms;
+      transition: all ease 600ms; }
+    #conocenos .card-columns .card a .marco1 {
+      height: 90%;
+      width: 90%;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+      opacity: 0; }
+    #conocenos .card-columns .card a .marco1:hover {
+      opacity: 1;
+      z-index: 1; }
+    #conocenos .card-columns .card a .marco2 {
+      height: 90%;
+      width: 90%;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      opacity: 0; }
+    #conocenos .card-columns .card a .marco2:hover {
+      opacity: 1;
+      z-index: 1; }
+  #conocenos .card-columns .to-animate {
+    opacity: 0; }
 
 #carrusel-principal {
   position: relative;

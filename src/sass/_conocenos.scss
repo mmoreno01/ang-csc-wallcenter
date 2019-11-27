@@ -146,6 +146,75 @@ video
 
   }
 }
+.card-columns{
+    .card{
+        position: relative;
+        overflow: hidden;
+        
+           .card-content:hover i{
+            color:#fff;
+            opacity: 1;             
+            }
+            .over {
+                background:rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transition: all ease 900ms;
+            }
+           
+            .over:hover{
+                opacity: .9;
+            }
+       a{        
+        .marcos {
+            top: 5%;
+            left: 5%;
+            z-index: 3;
+            position: absolute;
+            transition: all ease 600ms;
+        }
+        
+      
+        .marco1{
+            height: 90%;
+            width: 90%;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            opacity: 0;
+        }
+         .marco1:hover{
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .marco2{
+            height: 90%;
+            width: 90%;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            opacity: 0;
+
+        }
+        .marco2:hover {
+            opacity: 1;
+            z-index: 1;
+        }
+     
+       }
+      
+  
+         
+    }
+    .to-animate {
+        opacity:0;
+    }
+    
+}
 
 }
 

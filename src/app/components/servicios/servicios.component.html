@@ -29,7 +29,9 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <p class="card-text">{{ item.info }}</p>
-                        <a href="" class="btn">Reservar Cita</a>
+                        <form>
+                          <button  type="submit" value="submit"  class="btn" data-toggle="modal" data-target="#exampleModalCenter">Reservar Cita</button>
+                      </form>
                     </div>
                 </div>
               </div>
@@ -46,7 +48,9 @@
                   <div class="card-body">
                       <h5 class="card-title">{{ item.title }}</h5>
                       <p class="card-text">{{ item.info }}</p>
-                      <a href="" class="btn">Reservar Cita</a>
+                      <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+                          <button  type="submit" value="submit"  class="btn" data-toggle="modal" data-target="#exampleModalCenter">Reservar Cita</button>
+                      </form>
                   </div>
               </div>
             </div>
@@ -56,3 +60,46 @@
   </div>
 </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Proporciona tus Datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+          <div class="row">
+              <div class="form-group col-md-6">
+                  <input type="text" class="form-control" name="name"  placeholder="Nombre" formControlName="name" disabled>
+              </div>
+              <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email"  placeholder="Correo Electronico" formControlName="email">
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-6">
+                  <input type="phone"  name="phone" class="form-control" placeholder="Télefono" >
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-12">
+                <textarea class="form-control" name="message"  id="exampleFormControlTextarea1" rows="3" placeholder="Escribe un mensaje aqui"></textarea>
+            </div>
+            <div class="form-group col-12">
+                <button type="submit" value="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

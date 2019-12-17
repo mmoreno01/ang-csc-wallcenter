@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 //components
 import { AppComponent } from './app.component';
@@ -17,7 +19,7 @@ import { TipsComponent } from './components/tips/tips.component';
 import { BellezaComponent } from './components/belleza/belleza.component';
 import { SpaComponent } from './components/spa/spa.component';
 import { BienestarComponent } from './components/bienestar/bienestar.component'
-import { HomeComponent }from './components/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ServicioComponent } from './components/servicio/servicio.component';
 import { SearchComponent } from './components/search/search.component';
@@ -26,6 +28,7 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { EliteHealthComponent } from './components/elite-health/elite-health.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+
 
 // pipes
 import { TruncatePipe } from './pipes/truncate.pipe';
@@ -76,6 +79,8 @@ import { FormServiciosComponent } from './components/form-servicios/form-servici
       BrowserAnimationsModule,
       CarouselModule,
       NgxPaginationModule,
+      FormsModule,
+      ReactiveFormsModule,
       RouterModule.forRoot( ROUTES, {useHash:true}  )
   ],
   providers: [

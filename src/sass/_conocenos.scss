@@ -11,10 +11,7 @@ video
     h2
     {
         color: #c68659;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        margin-top: 0px;
-        font-weight: bold;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 10px;
         padding-bottom: 20px;
@@ -65,7 +62,7 @@ video
     width: 50%;
 }
 
-
+//style de la seccion conocenos
 #conocenos
 {
   padding: 100px 0px 50px;
@@ -73,14 +70,11 @@ video
 
         h1
         {
-            color: $color-titulos;
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-            margin-top: 0px;
-            font-weight: bold;
+            color: #c68659;
+            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 10px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
         p
         {

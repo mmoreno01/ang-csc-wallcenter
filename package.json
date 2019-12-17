@@ -25,13 +25,14 @@
     "jquery": "^3.4.1",
     "ngx-owl-carousel-o": "^1.1.7",
     "ngx-pagination": "^3.2.1",
+    "node-sass": "^4.13.0",
     "popper.js": "^1.15.0",
     "rxjs": "6.0.0",
     "wp-api-angular": "^3.0.0-beta8",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.7.0",
+    "@angular-devkit/build-angular": "^0.13.9",
     "@angular/cli": "~6.1.4",
     "@angular/compiler-cli": "^6.1.0",
     "@angular/language-service": "^6.1.0",

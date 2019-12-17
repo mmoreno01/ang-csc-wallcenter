@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 // import { ActivateRoute } from '@angular router';
 import { ServiciosService } from '../../services/servicios.service';
 // import { AreasService } from '../../services/areas.service';
 import { Router } from '@angular/router';
-import { stringify } from '@angular/compiler/src/util';
+import { FormGroup, FormControl}  from '@angular/forms';
 
 @Component({
   selector: 'app-servicios',
@@ -17,19 +16,25 @@ export class ServiciosComponent implements OnInit {
   servicios:any = {};
   mostrar= "true";
   ritualEspecial ="false";
+  formdata;
+  name;
+  email;
+
+
 
   p: number= 1;
 
 constructor(private serviciosService: ServiciosService,
-            // private verServicios: ServiciosService,
-            // private _areasService:AreasService,
             private router:Router ){
 
    this.serviciosService.getServices()
+   
         .subscribe((data: any) => {
         this.servicios  = data;
         console.log(this.servicios);
    });
+  
+
 }
 
 
@@ -40,9 +45,13 @@ constructor(private serviciosService: ServiciosService,
 //obtiene las imagenes del servicio
   ngOnInit() {
     this.servicios = this.serviciosService.getServices();
-    // this.data = this.verServicios.getServicio();
-    // this.data = this._areasService.getDatos();
-    // console.log(this.servicios);
+    this.formdata = new FormGroup({
+      name: new FormControl("miguwl"),
+      email: new FormControl("miguel@gmail.com")
+   });
+   
+    console.log(this.formdata );
+
   }
   activateClass(subModule){
     subModule.active = !subModule.active;
@@ -71,6 +80,12 @@ constructor(private serviciosService: ServiciosService,
 
   }
 
+ guardar(){
+   console.log("formulario de contacto");
+ }
+onClickSubmit(data){
+   this.email = data.email;
+}
 
 
 }

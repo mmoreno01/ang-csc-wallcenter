@@ -13,7 +13,7 @@
 @import'./galeria';
 @import'./servicios';
 @import'./elite';
-@import'./contacto';
+@import'contacto';
 @import'./animate';
 @import'./rituales';
 
@@ -36,6 +36,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
+    
   }
 
   to {

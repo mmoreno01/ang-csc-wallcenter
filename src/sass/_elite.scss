@@ -1,9 +1,121 @@
 @import "variables";
 
 #elite{
-    h1{
-        margin-top:250px;
+    .pt25x{
+        padding-top: 25px;
     }
+    .tcenter{
+        text-align: center;
+    }
+    .mt25x{margin-top: 25px;
+    }
+    .mt85x{margin-top: 85px;
+    }
+    .pt85x{padding-top: 185px;
+    }
+
+    .elparallax{
+        background-image: url(../assets/image/parallax/banner_elite_health.jpg);
+        height: 400px; 
+        background-size: cover;
+        h1 {
+            font-size: 60px;
+            font-weight: 100;}
+            color: #503d14;
+        h2 {
+            font-size: 15px;
+            letter-spacing: 5px;}
+        .fontx1{
+            font-family: -apple-system, BlinkMacSystemFont;
+        }
+
+    }
+    .head{
+        background-image: url(../assets/image/promoSpa/bannerElite.jpg);
+        background-repeat: no-repeat; 
+        background-size: cover;
+
+        p {font-size: 18px;
+            font-weight: 600;}
+        h1 {
+            font-size: 60px;
+            font-weight: 100;}
+        h2 {
+            font-size: 15px;
+            letter-spacing: 5px;}
+        .fontx1{
+            font-family: -apple-system, BlinkMacSystemFont;
+        }
+
+    }
+
+    .elvideo{
+        .tservicio{
+            text-align: center;
+            padding: 50px 0 50px 0;
+            color: #d1ae85;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        p{
+            line-height: 200%; 
+            font-size: 18px; 
+            font-weight: 600; 
+            text-align: justify;
+
+        }
+
+
+    }
+    .info{
+        padding: 80px 0 80px 0;
+        p{
+            font-size: 20px; 
+            font-weight: 200; 
+            text-align: justify;
+        }
+    }
+
+    .elslider{
+        h2{
+            color: #000; 
+            font-size: 25px; 
+            font-weight: 300; 
+            text-transform: capitalize; 
+            position: relative; 
+            z-index: 2;
+        }
+        .overlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(209, 174, 133, 0.4); 
+        }
+            
+        .services_content {
+            width: 100%;
+            position: absolute;
+            text-align: center; }
+        
+        .img-hover-zoom {
+        //height: 300px; /* [1.1] Set it as per your need */
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+        }
+
+        /* [2] Transition property for smooth transformation of images */
+        .img-hover-zoom img {
+        transition: transform 1.2s ease;
+        }
+
+        /* [3] Finally, transforming the image when container gets hovered */
+        .img-hover-zoom:hover img {
+        transform: scale(1.5);
+        } 
+
+
+
+    }
+
     
 }
 

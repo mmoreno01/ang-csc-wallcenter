@@ -8,24 +8,24 @@
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
          <ul>
-          <li class="btn"  (click)="verServicio(1)" (click)="mostrar = false">masajes</li>
-          <li class="btn"  (click)="verServicio(2)" (click)="mostrar = false">faciales</li>
-          <li class="btn"  (click)="verServicio(7)" (click)="mostrar = false">medicina estetica</li>
-          <li class="btn"  (click)="verServicio(6)" (click)="mostrar = false">tratamientos corporales</li>
-          <li class="btn"  (click)="verServicio(4)" (click)="mostrar = false">servicios plus</li>
-          <li class="btn"  (click)="verServicio(3)" (click)="mostrar = false">rituales especiales</li>
-          <li class="btn"  (click)="verServicio(8)" (click)="mostrar = false">quirofisica</li>
-          <li class="btn"  (click)="verServicio(5)" (click)="mostrar = false">aparatologia</li>
+          <li class="btn-service"   (click)="verServicio(1)" (click)="mostrar = false">masajes</li>
+          <li class="btn-service"  (click)="verServicio(2)" (click)="mostrar = false">faciales</li>
+          <li class="btn-service"  (click)="verServicio(7)" (click)="mostrar = false">medicina estetica</li>
+          <li class="btn-service"  (click)="verServicio(6)" (click)="mostrar = false">tratamientos corporales</li>
+          <li class="btn-service"  (click)="verServicio(4)" (click)="mostrar = false">servicios plus</li>
+          <li class="btn-service"  (click)="verServicio(3)" (click)="mostrar = false">rituales especiales</li>
+          <li class="btn-service"  (click)="verServicio(8)" (click)="mostrar = false">quirofisica</li>
+          <li class="btn-service"  (click)="verServicio(5)" (click)="mostrar = false">aparatologia</li>
         </ul>
     </div>
     <div class="row">
       <div class="col-12" *ngIf="mostrar">
           <div class="card mb-5 animated fadeIn" *ngFor="let item of servicios | slice:0:10">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <img class="card-img-top" [src]="item.img" [alt]="item.title">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="card-body">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <p class="card-text">{{ item.info }}</p>
@@ -41,10 +41,10 @@
         <div class="col-md-12">
           <div class="card mb-5 animated fadeIn" *ngFor="let item of restData; let i = index">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-5">
                   <img class="card-img-top" [src]="item.img" [alt]="item.title">
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                   <div class="card-body">
                       <h5 class="card-title">{{ item.title }}</h5>
                       <p class="card-text">{{ item.info }}</p>

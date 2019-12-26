@@ -42,43 +42,43 @@ getServicio( id: string){
 gallery = [
   {
     id: "1",
-    img: "./assets/image/galeria/1.jpg"
+    img: "./assets/image/galeria/1.webp"
   },
   {
     id: "2",
-    img: "./assets/image/galeria/2.jpg"
+    img: "./assets/image/galeria/2.webp"
   },
   {
     id: "3",
-    img: "./assets/image/galeria/3.jpg"
+    img: "./assets/image/galeria/3.webp"
   },
   {
     id: "4",
-    img: "./assets/image/galeria/6.jpg"
+    img: "./assets/image/galeria/6.webp"
   },
   {
     id: "5",
-    img: "./assets/image/galeria/7.jpg"
+    img: "./assets/image/galeria/7.webp"
   },
   {
     id: "6",
-    img: "./assets/image/galeria/8.jpg"
+    img: "./assets/image/galeria/8.webp"
   },
   {
     id: "7",
-    img: "./assets/image/galeria/13.jpg"
+    img: "./assets/image/galeria/13.webp"
   },
   {
     id: "8",
-    img: "./assets/image/galeria/14.jpg"
+    img: "./assets/image/galeria/14.webp"
   },
   {
     id: "9",
-    img: "./assets/image/galeria/16.jpg"
+    img: "./assets/image/galeria/16.webp"
   },
   {
     id: "10",
-    img: "./assets/image/galeria/19.jpg"
+    img: "./assets/image/galeria/19.webp"
   }
 ]
 

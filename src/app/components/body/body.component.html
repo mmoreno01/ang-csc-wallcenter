@@ -30,8 +30,17 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-12 col-lg-6 d-flex align-items-center to-animate ">
-        <div class="card-columns">
+      <div class="col-md-12 col-lg-6 content-carousel to-animate">
+        <div class="content-carousel">
+              <owl-carousel-o  [options]="customOptions">
+                  <ng-container  *ngFor="let item of imgsGallery">
+                      <ng-template carouselSlide>
+                          <img [src]="item.img" class="card-img" alt="">
+                      </ng-template>
+                  </ng-container>  
+              </owl-carousel-o>
+        </div>
+        <!-- <div class="card-columns">
           <div class="card" *ngFor="let item of imgsGallery | slice: 0:9">
               <a  id="single_image" data-fancybox="gallery" [href]="item.img">
                   <img [src]="item.img" class="card-img" alt="">
@@ -39,7 +48,7 @@
 
               </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -71,7 +80,7 @@ fin seccion de conocenos -->
 
 
 <!-- parallax -->
-<section id="parallax-inicio" style="background-image:url('./assets/image/parallax/cscwellnesscenter1.jpg');
+<section id="parallax-inicio" style="background-image:url('./assets/image/galeria/1.webp');
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -79,7 +88,7 @@ background-size: cover;
 width: 100%;
 height: 300px;
 position: relative;">
-    <div class="overlay-int"></div>
+    <!-- <div class="overlay-int"></div> -->
     <div class="container-fluid">
         <div class="row">
             <p class="wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">Cambios pequeños, grandes resultados</p>

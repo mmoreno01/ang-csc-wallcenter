@@ -2,8 +2,10 @@
 @import"animate";
 
 #servicios{
+
   padding: 200px 0px;
   background:#fff;
+
 .content-title{
     h1{
       color: #c68659;
@@ -40,26 +42,32 @@
 ul{
   padding-left: 0px;
   margin-bottom: 30px;
+  
   li{
     text-transform:uppercase;
-    .active{
-      background: #c68659;
-      color: #fff;
-    }
+    display:inline-block;
   }
-
-  .btn:hover{
-    background: #c68659;
-    color: #fff;
-  }
-  .btn {
+  .btn-service {
     border: none;
     outline: none;
-    padding: 10px 16px;
+    padding: 10px 10px;
     background-color: #f1f1f1;
+    color: black;
     cursor: pointer;
+    font-size: 14px;
   }
-  
+  .btn-succes{
+    background: #c68659;
+    color:#fff;
+  }
+  .success{
+    background: green;
+    color:#fff;
+  }
+  .danger{
+    background: red;
+    color:#fff;
+  }
 }
 .card{
   .card-body{
@@ -79,7 +87,7 @@ ul{
     }
   }
   .card-img-top{
-    width: 80%;
+    width: 100%;
     padding: 20px;
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+
 
 
 @Component({
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class HomeComponent implements OnInit {
+
+  
 
   constructor() { }
 

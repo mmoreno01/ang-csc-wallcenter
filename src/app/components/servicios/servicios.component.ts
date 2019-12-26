@@ -5,11 +5,16 @@ import { ServiciosService } from '../../services/servicios.service';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl}  from '@angular/forms';
 
+
 @Component({
   selector: 'app-servicios',
   templateUrl: './servicios.component.html',
 })
 export class ServiciosComponent implements OnInit {
+
+  
+
+  
 
   // data:any = {};
   restData: any [] = [];

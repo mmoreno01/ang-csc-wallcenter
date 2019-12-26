@@ -13,6 +13,7 @@ export class PromocionesComponent implements OnInit {
     customOptions: any = {
     loop: true,
     center: true,
+    animateOut: 'fadeOut',
     margin:10,
     autoplay: true,
     mouseDrag: true,

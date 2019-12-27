@@ -4,7 +4,7 @@
 
  <!--section spa-->
  <a name="spa"></a>
- <section id="section-two-spa">
+ <section id="section-two-spa" class="animated fadeIn">
     <div class="container">
             <div class="content-title">
                 <h2 class="wow animated fadeIn"  data-wow-duration = "2s" data-wow-delay = "1s">SPA</h2>
@@ -14,43 +14,37 @@
               <div class="col-12 colum-content d-none d-lg-block">
                     <div class="content-principal">
                         <div  class="variety-selector cir_spa wow animated fadeIn" data-wow-duration = "1s" data-wow-delay = "1s">
-                            <a class="url active"  (click)="alerta='faciales'" title=""><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
-                            <a class="url"          (click)="alerta='masajes'" title=""><img src="./assets/image/inicio/spa/jpg/masajes.png"   alt=""><i class="icon-icon2"></i></a>
-                            <a class="url"          (click)="alerta='rituales'" title=""><img src="./assets/image/inicio/spa/jpg/rituales.png"  alt=""><i class="icon-icon3"></i></a>
-                            <a class="url"          (click)="alerta='tratamientos'" title=""><img src="./assets/image/inicio/spa/jpg/corporales1.png" alt=""><i class="icon-icon4"></i></a>
+                            <a class="url active" href="#cir3" ><img src="./assets/image/inicio/spa/jpg/faciales.png" alt=""><i class="icon-icon1"></i></a>
+                            <a class="url"  href="#cir4"><img src="./assets/image/inicio/spa/jpg/masajes.png"   alt=""><i class="icon-icon2"></i></a>
+                            <a class="url"  href="#cir5"><img src="./assets/image/inicio/spa/jpg/rituales.png"  alt=""><i class="icon-icon3"></i></a>
+                            <a class="url"  href="#cir6"><img src="./assets/image/inicio/spa/jpg/corporales1.png" alt=""><i class="icon-icon4"></i></a>
                         </div>
                         <div class="row">
                             <div class="circulos-secciones col-6">
-                              <div [ngSwitch]="alerta">
-                                  <article  *ngSwitchCase="'faciales'" id="cir3" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">faciales</h1>
-                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Con el paso del tiempo, la piel puede llenarse de impurezas, por eso es necesario recuperar la vitalidad de tu rostro, para lucir una apariencia renovada, fresca e hidratada.<br>
-                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
-                                      </p>
-                                  </article>
-                                  <article  *ngSwitchCase="'masajes'" id="cir4" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">masajes</h1>
-                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Hemos creado un espacio dedicado al relajamiento y renovación de tu mente y cuerpo. Ayuda de manera natural a mantener la salud de tu cuerpo consiéntelo, escúchalo.. <br>
-                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
-                                      </p>
-                                  </article>
-                                  <article  *ngSwitchCase="'rituales'" id="cir5" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">rituales especiales</h1>
-                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Olvídate de la rutina, Conecta tus sentidos, renuévate, equilibra tu energía y vive una experiencia CSC, logrando una armonía entre mente, cuerpo y espíritu. <br>
-                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
-                                      </p>
-                                  </article>
-                                  <article  *ngSwitchCase="'tratamientos'" id="cir6" class="">
-                                      <h1 class="wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">tratamientos corporales</h1>
-                                      <p class="wow animated fadeInUp"  data-wow-duration = "1s" data-wow-delay = "1s">Mejora la calidad de tu vida y luce un aspecto saludable mediante nuestros planes nutricionales 100% personalizados. Nosotros te ayudamos a lograr tus objetivos. <br>
-                                      <a href="servicios.html" class="link-bienestar wow animated fadeInDown" data-wow-duration = "1s" data-wow-delay = "1s">Conoce más</a>
-                                      </p>
-                                  </article>
-                                  <article *ngSwitchDefault>
-
-                                  </article>
-                              </div>
-
+                                    <article id="cir3" style="display: none;">
+                                            <h1 class="wow  fadeInDown animated" data-wow-duration="1s" data-wow-delay="1s">Faciales</h1>
+                                            <p class="wow  fadeIn animated" data-wow-duration="1s" data-wow-delay="1s">Con el paso del tiempo, la piel puede llenarse de impurezas, por eso es necesario recuperar la vitalidad de tu rostro, para lucir una apariencia renovada, fresca e hidratada.<br>
+                                                <a href="faciales.html" class="link-spa wow  fadeInDown" data-wow-duration="1s" data-wow-delay="1s">Conoce más</a>
+                                            </p>
+                                    </article>
+                                    <article id="cir4" style="display: none;">
+                                            <h1 class="wow  fadeInDown animated" data-wow-duration="1s" data-wow-delay="1s">Masajes</h1> 
+                                            <p class="wow  fadeIn animated" data-wow-duration="1s" data-wow-delay="1s">Hemos creado un espacio dedicado al relajamiento y renovación de tu mente y cuerpo. Ayuda de manera natural a mantener la salud de tu cuerpo consiéntelo, escúchalo.<br>
+                                           <a href="servicios.html" class="link-spa">Conoce más</a>
+                                           </p>
+                                    </article>
+                                    <article id="cir5" style="display: none;">
+                                            <h1 class="wow  fadeInDown animated" data-wow-duration="1s" data-wow-delay="1s">Rituales Especiales</h1> 
+                                            <p class="wow  fadeIn animated" data-wow-duration="1s" data-wow-delay="1s">Olvídate de la rutina, Conecta tus sentidos, renuévate, equilibra tu energía y vive una experiencia CSC, logrando una armonía entre mente, cuerpo y espíritu.<br>
+                                           <a href="rituales_especiales.html" class="link-spa">Conoce más</a>
+                                           </p>
+                                    </article>
+                                    <article id="cir6" style="">
+                                            <h1 class="wow  fadeInDown animated" data-wow-duration="1s" data-wow-delay="1s">Tratamientos Corporales</h1>
+                                            <p class="wow  fadeIn animated" data-wow-duration="1s" data-wow-delay="1s">Dale a tu cuerpo el apapacho que necesita. Desintoxica tu cuerpo, obtén una silueta más firme, luce una piel tersa y moviliza la grasa para que pueda ser eliminada de manera natural.<br>
+                                            <a href="tratamientos_corporales.html" class="link-spa">Conoce más</a>
+                                            </p>
+                                    </article>
                             </div>
 
                             <div class="col-6">

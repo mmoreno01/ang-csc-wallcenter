@@ -4,6 +4,9 @@ import { ServiciosService } from '../../services/servicios.service';
 // import { AreasService } from '../../services/areas.service';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl}  from '@angular/forms';
+import * as $ from 'jquery';
+
+
 
 
 @Component({
@@ -24,7 +27,7 @@ export class ServiciosComponent implements OnInit {
   formdata;
   name;
   email;
-
+  $: any;
 
 
   p: number= 1;
@@ -56,6 +59,18 @@ constructor(private serviciosService: ServiciosService,
    });
    
     console.log(this.formdata );
+
+    
+    $(document).ready(function(){
+
+      $("#servicios ul li:first").addClass('btn-succes');
+  
+      $("#servicios ul li").click(function(){
+        $("#servicios ul li").removeClass('btn-succes');
+          $(this).addClass('btn-succes');
+      });
+   });
+  
 
   }
   activateClass(subModule){

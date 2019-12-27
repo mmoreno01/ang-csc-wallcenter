@@ -1,6 +1,8 @@
 @import "variables";
 #contacto
 {
+    padding: 200px 0px;
+
     // background: url(./assets/image/inicio/politicas/bannercontacto.jpg);
     // background-position: center;
     // background-repeat: no-repeat;
@@ -11,11 +13,26 @@
     {
         color:#c68659;
         font-family:$tipografia;
-        padding: 100px 0px 10px;
-        text-align: center;
         font-size: 28px;
-        font-weight: bold;
         text-transform: uppercase;
+    }
+    article{
+        margin: auto;
+        h3{
+            font-size: 20px;
+            color:#674936;
+        }
+        p{
+            color:#674936;
+        }
+    }
+    .info-contacto{
+        justify-content: center;
+        display: flex;
+    }
+    .btn{
+        background: #c68659;
+        color: #fff;
     }
     .textos-contacto
     {
@@ -28,17 +45,25 @@
         color:#664936;
     }
 
+    .form-control:focus {
+        color: #c68659;
+        border-bottom:1px solid #c68659!important;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem transparent;
+    }
+    .form-control {
+        border-bottom: 1px solid #c68659;
+        border-radius: 0;
+    }
     form
     {
         max-width: 100%;
         margin: auto;
-        padding: 10px 20px;
         box-sizing: border-box;
         margin-top: 20px;
         border-radius: 20px;
         font-family:$tipografia;
         background-color: transparent;
-        margin-bottom: 30px;
         box-shadow: 1px white solid;
         color: white;
     }
@@ -83,7 +108,6 @@
     input, textarea, select
     {
         width: 100%;
-        margin-bottom:  30px;
         padding: 7px;
         box-sizing: border-box;
         font-size: 17px;
@@ -91,7 +115,8 @@
         font-family: 'Questrial', sans-serif;
         background: transparent;
         color: $color-titulos;
-        border: 1px solid #d1ae85;
+        border-bottom: 1px solid #d1ae85;
+        border-color:transparent; 
     }
     textarea
     {
@@ -124,10 +149,7 @@
     {
         background:rgba(74, 44, 33, 0.9);
     }
-    input
-    {
-        color: white;
-    }
+   
     .contenidos-contacto-titulo
     {
         font-family: 'Poppins', sans-serif;

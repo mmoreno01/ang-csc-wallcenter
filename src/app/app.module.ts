@@ -7,7 +7,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import * as $ from 'jquery';
 
 //components
 import { AppComponent } from './app.component';

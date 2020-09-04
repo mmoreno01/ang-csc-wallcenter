@@ -26,7 +26,7 @@
     "jquery": "^3.4.1",
     "ngx-owl-carousel-o": "^1.1.7",
     "ngx-pagination": "^3.2.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "popper.js": "^1.15.0",
     "rxjs": "6.0.0",
     "wp-api-angular": "^3.0.0-beta8",
